@@ -466,9 +466,15 @@ Autômatos são objetos que operam a si mesmos. Essa definição, disponível na
 
 Os autômatos celulares são, segundo a Encyclopaedia Britannica (referência \cite{britannica3}), simples modelos espacialmente distribuídos capazes de simular processos do mundo real. Eles foram inventados por John von Neumann e Stanislaw Ulam no Laboratório Nacional de Los Alamos em 1940 e ficaram famosos através do ``Game of Life'', inventado por John Conway em 1970, que simula a dinâmica de vida, morte e população.
 
+\section*{A nova ciência de Stephen Wolfram}
+
+\section*{O autômato estocástico de Stauffer}
+
 Em 2003, Dietrich Stauffer (Referência \cite{stauffer}) publicou um artigo no qual ele descreveu um autômato celular não-homogêneo (chamado por ele de InCA ou Inhomogeneous Cellullar Automata) no qual a atualização das células ocorria de forma aleatória e cada célula tinha uma espécie de resistência interna a mudar de estado. Formalmente, em uma matriz, cada célula do autômato de Stauffer guarda dois números: o próprio estado e o próprio limiar. O limiar é definido como sendo o menor valor da soma dos estados das células vizinhas necessário para que a célula fique no estado $+1$ caso ela seja atualizada. Caso a célula seja atualizada mas ela não tenha um número de vizinhos no estado $+1$ suficiente para ficar no estado $+1$, a célula fica no estado $-1$ e seu limiar diminui por um número aleatório entre $0$ e $q$, onde $q$ é o ajuste máximo de limiar, definido antes do início da simulação. Caso a célula fique no estado $+1$ ao ser atualizada, o seu limiar aumenta por um número aleatório entre $0$ e $q$.
 
 Em seu artigo ``Adjustment and social choice'' (Referência \cite{stauffer}), Stauffer explorou o comportamento das oscilações do estado médio e do limiar médio da matriz em função do tempo de simulação. Nisso ele percebeu que, quanto maior o valor do ajuste máximo de limiar $q$, maior é a frequência dessas oscilações em função do tempo. Stauffer utilizou os resultados obtidos para propor previsões e modelos para mercados financeiros.
+
+\section*{A dinâmica de padrões de Klaus Kramer}
 
 Já em 2014, Klaus Kramer (Referência \cite{klaus}) desenvolveu estudos sobre autômatos celulares envolvendo três estados e focou na formação de aglomerados. Dos três estados, dois ($+1$ e $-1$) eram competitivamente ativos pois competiam entre si e um -- o estado $0$ -- era competitivamente passivo pois não competia com os outros estados. A regra de atualização utilizada foi semelhante à de Stauffer, com a diferença de o limiar de cada célula permanecer constante ao longo de toda a simulação. Além disso, nesse modelo as células com pelo menos uma célula vizinha no estado $0$ têm chances aleatórias de mudar para o estado $0$. Por fim, Kramer relacionou os estudos realizados com áreas de transição entre biomas diferentes.
 
@@ -489,7 +495,7 @@ Tendo como base esses autores, o objetivo deste trabalho foi explorar a dinâmic
 \part{Preparação da pesquisa}
 % ----------------------------------------------------------
 
-\section*{Metodologia}
+\chapter{Metodologia}
 
 \subsection*{Estudos iniciais}
 
@@ -501,7 +507,7 @@ O primeiro passo para este estudo foi conhecer a produção científica sobre au
 \end{enumerate}
 Também foram verificadas implementações de autômatos celulares  com o software de simulações científicas Netlogo. Ainda foi feita a leitura de alguns artigos sobre estatística e correlação para auxiliar na interpretação dos dados gerados pelas simulações. Adicionalmente, com o objetivo de obter conhecimento para criar implementações de autômatos celulares na linguagem de programação C, foram  lidos vários capítulos do livro “C programming: A modern approach, 2nd Edition” do autor K.N. King (Referência \cite{king}).
     
-\subsection*{Desenvolvimentos}
+\subsection*{Modelagem de autômatos}
 
 O primeiro desenvolvimento foi a percepção de características recorrentes nos autômatos celulares observados nos Estudos Iniciais.
 A seguinte lista de características de autômatos celulares foi produzida com base nos artigos e software explorados:\\
@@ -538,6 +544,8 @@ Em seguida, esse modelo de autômatos celular foi implementado na linguagem C. P
     \label{fig:matrizL100Ciclo0}
 \end{figure}
 
+\section*{O algoritmo de contagem de aglomerados}
+
 O grande diferencial desta implementação do InCA, em relação ao estudo de Stauffer, foi a utilização de um algoritmo de contagem de aglomerados de células com o mesmo estado. Esse algoritmo, ilustrado na Figura \ref{fig:contamination}, encontra todas as células em um mesmo aglomerado através de ``contaminações'' sucessivas de células com o mesmo estado que são vizinhas entre si.
 
 \begin{figure}
@@ -549,7 +557,21 @@ O grande diferencial desta implementação do InCA, em relação ao estudo de St
 
 A implementação do InCA foi planejada para imprimir várias informações sobre a situação da matriz: Ciclo, Estado Médio da matriz, Limiar Médio da matriz, Número de Aglomerados e Índice de células Positivas que Pertencem a Algum Aglomerado (número total de células positivas em algum aglomerado dividido pelo número total de células na matriz). Um \textit{Ciclo} foi definido como sendo igual a $L\times L$ atualizações aleatórias de células na matriz, já que esse seria o número de atualizações de células caso o sistema fosse determinístico.
 
-\subsection*{Metodologias de análise}
+\section*{Metodologias de análise}
+
+\subsection*{A correlação entre estado médio e número de aglomerados}
+
+\subsection*{Afinidade}
+
+\subsection*{Afinidade para vizinhanças de Von Neumann}
+
+\subsection*{Afinidade para vizinhanças de Moore}
+
+\subsection*{Caos}
+
+\subsection*{Caos em vizinhanças de Von Neumann}
+
+\subsection*{Caos em vizinhanças de Moore}
 
 As análises foram feitas graficamente com os dados de estado médio, limiar médio, número de aglomerados e índice de células pertencentes a aglomerados em função do ciclo da simulação. Nesses gráficos foram buscados padrões recorrentes, como retas, parábolas ou elipses. Para isso foram feitas 288 simulações, variando a largura da matriz pelos valores 100, 250,
 500,
@@ -592,7 +614,7 @@ As análises foram feitas graficamente com os dados de estado médio, limiar mé
 200 e
 500.
 
-\section*{Resultados Parciais Alcançados}
+\chapter{Resultados e Análises}
 
 O primeiro estudo foi realizado quanto ao efeito da topologia no comportamento do valor médio e do limiar médio em função do ciclo. Foi observado que topologias com bordas conectadas apresentam gráficos mais suaves em relação a topologias com bordas fechadas. %Isso está ilustrado nas Figuras \ref{fig:topocaixa} e \ref{fig:topotorus}.
 
@@ -655,6 +677,7 @@ Também foram buscados padrões de caos e atratores na dinâmica não-linear das
 
 Por fim foram feitas simulações considerando matrizes em três dimensões, nas quais foi possível constatar comportamentos análogos aos observados no caso de duas dimensões, como a relação entre estado médio e limiar médio em função do ciclo de simulação, além da linearidade do número de aglomerados em função do estado médio. Trabalhos nessas simulações foram descontinuados devido a incertezas sobre a precisão do código utilizado.
 
+\section{Fenômenos não estudados}
 
 % ----------------------------------------------------------
 % Finaliza a parte no bookmark do PDF
