@@ -10,15 +10,26 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}
-\contentsline {part}{\partnumberline {I}\MakeTextUppercase {Prepara\IeC {\c c}\IeC {\~a}o da pesquisa}}{25}{part.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{27}{chapter.2}
+\contentsline {section}{\numberline {2.1}Estudos iniciais}{27}{section.2.1}
+\contentsline {section}{\numberline {2.2}Modelagem e implementa\IeC {\c c}\IeC {\~a}o de aut\IeC {\^o}matos}{27}{section.2.2}
+\contentsline {section}{\numberline {2.3}O algoritmo de contagem de aglomerados}{29}{section.2.3}
+\contentsline {section}{\numberline {2.4}Metodologias de an\IeC {\'a}lise}{29}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}A correla\IeC {\c c}\IeC {\~a}o entre estado m\IeC {\'e}dio e n\IeC {\'u}mero de aglomerados}{29}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Afinidade}{30}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Caos}{30}{subsection.2.4.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Resultados e An\IeC {\'a}lises}}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fen\IeC {\^o}menos n\IeC {\~a}o estudados}{32}{section.3.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Conclus\IeC {\~a}o}}{33}{chapter.2}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o}}{33}{chapter.4}
 \vspace {\cftbeforechapterskip }
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{35}{section*.22}
+\contentsline {part}{\uppercase {Ap\^endices}}{35}{section*.19}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -31,7 +42,7 @@
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{41}{section*.23}
+\contentsline {part}{\uppercase {Anexos}}{41}{section*.20}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}

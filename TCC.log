@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  28 MAY 2019 03:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  30 MAY 2019 05:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1138,14 +1138,14 @@ l.356 A
 
 ] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 13.
+(Font)              <14.4> on input line 32.
 
-Overfull \hbox (6.4481pt too wide) in paragraph at lines 29--29
+Overfull \hbox (6.4481pt too wide) in paragraph at lines 40--40
  [][] [][][]\T1/lmss/bx/n/12 NULLAM ELE-MEN-TUM URNA VEL IM-PER-DIET 
  []
 
 
-Overfull \hbox (1.3121pt too wide) in paragraph at lines 29--29
+Overfull \hbox (1.3121pt too wide) in paragraph at lines 40--40
  \T1/lmss/bx/n/12 SO-DA-LES ELIT IP-SUM PHA-RE-TRA LI-GULA AC 
  []
 
@@ -1162,66 +1162,90 @@ LaTeX Warning: Citation `britannica2' on page 23 undefined on input line 465.
 LaTeX Warning: Citation `britannica3' on page 23 undefined on input line 467.
 
 
-LaTeX Warning: Citation `stauffer' on page 23 undefined on input line 469.
+LaTeX Warning: Citation `stauffer' on page 23 undefined on input line 482.
+
+[23
+
+]
+
+LaTeX Warning: Citation `stauffer' on page 24 undefined on input line 484.
 
 
-LaTeX Warning: Citation `stauffer' on page 23 undefined on input line 471.
+LaTeX Warning: Citation `klaus' on page 24 undefined on input line 488.
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 488.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25] [26]
+
+LaTeX Warning: Citation `lazzari' on page 27 undefined on input line 526.
 
 
-LaTeX Warning: Citation `klaus' on page 23 undefined on input line 473.
+LaTeX Warning: Citation `klaus' on page 27 undefined on input line 527.
+
+
+LaTeX Warning: Citation `stauffer' on page 27 undefined on input line 528.
+
+
+LaTeX Warning: Citation `king' on page 27 undefined on input line 530.
+
+[27
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 547--558
+
+ []
+
+<matrizL100Ciclo0.png, id=253, 48.18pt x 48.18pt>
+File: matrizL100Ciclo0.png Graphic file (type png)
+ <use matrizL100Ciclo0.png>
+Package pdftex.def Info: matrizL100Ciclo0.png used on input line 563.
+(pdftex.def)             Requested size: 142.26378pt x 142.287pt.
+
+
+LaTeX Warning: Citation `stauffer' on page 28 undefined on input line 568.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
-
-] [24] [25
-
-] [26]
-
-LaTeX Warning: Citation `lazzari' on page 27 undefined on input line 498.
-
-
-LaTeX Warning: Citation `klaus' on page 27 undefined on input line 499.
-
-
-LaTeX Warning: Citation `stauffer' on page 27 undefined on input line 500.
-
-
-LaTeX Warning: Citation `king' on page 27 undefined on input line 502.
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 519--530
-
- []
-
-[28]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29]
-
-LaTeX Warning: Reference `fig:afinidadesHeatmap' on page 30 undefined on input line 647.
-
-
-LaTeX Warning: Reference `fig:afinidadeMedia' on page 30 undefined on input line 652.
-
-
-LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 30 undefined on input line 654.
-
-[30] [31] [32
+ [28] <contamination.png, id=261, 198.7425pt x 198.7425pt>
+File: contamination.png Graphic file (type png)
+ <use contamination.png>
+Package pdftex.def Info: contamination.png used on input line 576.
+(pdftex.def)             Requested size: 142.26378pt x 142.26659pt.
+ [29 </home/ly/Documents/TCC/LaTeX-TCC/matrizL100Ciclo0.png (PNG copy)>] [30 </home/ly/Documents/TCC/LaTeX-TCC/contamination.png>] [31
 
 ]
 
-LaTeX Warning: Reference `fig:afinidadeMedia' on page 33 undefined on input line 674.
+LaTeX Warning: Reference `fig:afinidadesHeatmap' on page 32 undefined on input line 648.
+
+
+LaTeX Warning: Reference `fig:afinidadeMedia' on page 32 undefined on input line 653.
+
+
+LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 32 undefined on input line 655.
+
+[32]
+
+LaTeX Warning: Reference `fig:afinidadeMedia' on page 33 undefined on input line 676.
 
 No file TCC.bbl.
-[33] [34
+[33
+
+] [34
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 706.
+(hyperref)                removing `\uppercase' on input line 708.
 
 [35
 
@@ -1234,7 +1258,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 734.
+(hyperref)                removing `\uppercase' on input line 736.
 
 [41
 
@@ -1257,30 +1281,30 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@toc=\write8
 \openout8 = `TCC.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 762.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 762.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
  (/home/ly/Documents/TCC/LaTeX-TCC/TCC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 762.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 762.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 764.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 762.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
  ) 
 Here is how much of TeX's memory you used:
- 14054 strings out of 493029
- 207878 string characters out of 6136233
- 472603 words of memory out of 5000000
- 17153 multiletter control sequences out of 15000+600000
- 94126 words of font info for 127 fonts, out of 8000000 for 9000
+ 14145 strings out of 493029
+ 209124 string characters out of 6136233
+ 472620 words of memory out of 5000000
+ 17210 multiletter control sequences out of 15000+600000
+ 95278 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,36p,1965b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (49 pages, 267062 bytes).
+ 40i,13n,36p,1965b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (49 pages, 305101 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 399 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
- 31913 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 32507 words of extra memory for PDF output out of 35830 (max. 10000000)
 

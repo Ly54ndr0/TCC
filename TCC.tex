@@ -462,27 +462,49 @@ Agradeço ao meu Orientador Marlus Koehler pela liberdade e pela confiança no m
 \chapter{Introdução}
 % ----------------------------------------------------------
 
-Autômatos são objetos que operam a si mesmos. Essa definição, disponível na Encyclopaedia Britannica (Referências \cite{britannica1} e \cite{britannica2}), traz a possibilidade de objetos de uso cotidiano, como o computador e o celular, se encaixarem na categoria de autômatos. Porém, a existência de desses objetos não é nova, existindo autômatos desde a Grécia antiga na figura de um modelo de madeira de um pombo construído por Archytas de Tarentum. Utilizações contemporâneas de autômatos incluem as redes neurais e as inteligências artificiais. Também existem outros tipos famosos de autômatos, como os autômatos celulares.
+Autômatos são objetos que operam a si mesmos. Essa definição, disponível na Encyclopaedia Britannica (Referências \cite{britannica1} e \cite{britannica2}), traz a possibilidade de objetos de uso cotidiano, como o computador e o celular, se encaixarem na categoria de autômatos. Porém, a existência desses objetos não é nova, existindo autômatos desde a Grécia antiga na figura de um modelo de madeira de um pombo construído por Archytas de Tarentum. Utilizações contemporâneas de autômatos incluem as redes neurais e as inteligências artificiais. Também existem outros tipos famosos de autômatos, como os autômatos celulares.
 
 Os autômatos celulares são, segundo a Encyclopaedia Britannica (referência \cite{britannica3}), simples modelos espacialmente distribuídos capazes de simular processos do mundo real. Eles foram inventados por John von Neumann e Stanislaw Ulam no Laboratório Nacional de Los Alamos em 1940 e ficaram famosos através do ``Game of Life'', inventado por John Conway em 1970, que simula a dinâmica de vida, morte e população.
 
 \section*{A nova ciência de Stephen Wolfram}
 
+No livro \textit{A New Kind Of Science}, o autor Stephen Wolfram determinou alguns axiomas sobre os autômatos, que basicamente são os seguintes:
+\begin{enumerate}
+	\item É possível criar sistemas complexos a partir de regras simples.
+	\item Princípio da equivalência computacional: para todo comportamento que não é obviamente simples  existe uma computação correspondente equivalentemente sofisticada.
+	\item É possível descobrir como um sistema vai se comportar simplesmente executando o experimento e observando o que acontece. Porém, o sucesso das ciências aconteceu ao serem encontradas fórmulas matemáticas que previam os resultados desses experimentos sem a necessidade da execução do mesmo. Apesar de o princípio da equivalência computacional garantir uma resposta mais complexa, soluções mais simples podem existir.
+	\item Apesar da possibilidade de sistemas simplificáveis, podem existir sistemas irredutíveis computacionalmente, ou seja, cuja única forma de prever o resultado do experimento é executando o experimento.
+\end{enumerate}
+Este último axioma é o que causou Stephen a desenvolver a teoria de autômatos celulares descrita no livro dele.
+
 \section*{O autômato estocástico de Stauffer}
 
-Em 2003, Dietrich Stauffer (Referência \cite{stauffer}) publicou um artigo no qual ele descreveu um autômato celular não-homogêneo (chamado por ele de InCA ou Inhomogeneous Cellullar Automata) no qual a atualização das células ocorria de forma aleatória e cada célula tinha uma espécie de resistência interna a mudar de estado. Formalmente, em uma matriz, cada célula do autômato de Stauffer guarda dois números: o próprio estado e o próprio limiar. O limiar é definido como sendo o menor valor da soma dos estados das células vizinhas necessário para que a célula fique no estado $+1$ caso ela seja atualizada. Caso a célula seja atualizada mas ela não tenha um número de vizinhos no estado $+1$ suficiente para ficar no estado $+1$, a célula fica no estado $-1$ e seu limiar diminui por um número aleatório entre $0$ e $q$, onde $q$ é o ajuste máximo de limiar, definido antes do início da simulação. Caso a célula fique no estado $+1$ ao ser atualizada, o seu limiar aumenta por um número aleatório entre $0$ e $q$.
+Em 2003, Dietrich Stauffer (Referência \cite{stauffer}) publicou um artigo no qual ele descreveu um autômato celular não-homogêneo (chamado por ele de InCA ou Inhomogeneous Cellullar Automata) no qual a atualização das células ocorria de forma aleatória e cada célula tinha uma espécie de resistência interna a mudar de estado. Formalmente, em uma matriz, cada célula do autômato de Stauffer guarda dois números: o próprio estado e o próprio limiar. O limiar é definido como sendo o menor valor da soma dos estados das células vizinhas necessário para que a célula fique no estado $+1$ caso ela seja atualizada. Esse número pode ser positivo ou negativo. Caso a célula seja atualizada mas ela não tenha um número de vizinhos no estado $+1$ suficiente para ficar no estado $+1$, a célula fica no estado $-1$ e seu limiar diminui por um número aleatório entre $0$ e $q$, onde $q$ é o ajuste máximo de limiar, definido antes do início da simulação. Caso a célula fique no estado $+1$ ao ser atualizada, o seu limiar aumenta por um número aleatório entre $0$ e $q$.
 
-Em seu artigo ``Adjustment and social choice'' (Referência \cite{stauffer}), Stauffer explorou o comportamento das oscilações do estado médio e do limiar médio da matriz em função do tempo de simulação. Nisso ele percebeu que, quanto maior o valor do ajuste máximo de limiar $q$, maior é a frequência dessas oscilações em função do tempo. Stauffer utilizou os resultados obtidos para propor previsões e modelos para mercados financeiros.
+Em seu artigo ``Adjustment and social choice'' (Referência \cite{stauffer}), Stauffer explorou o comportamento das oscilações do estado médio e do limiar médio da matriz em função do tempo de simulação. Nisso ele percebeu que, quanto maior o valor do ajuste máximo de limiar $q$, maior é a frequência dessas oscilações em função do tempo. Além de comentar sobre a possibilidade de aplicação em Física de Transição de Fases, Stauffer utilizou os resultados obtidos para propor previsões e modelos para mercados financeiros.
 
 \section*{A dinâmica de padrões de Klaus Kramer}
 
-Já em 2014, Klaus Kramer (Referência \cite{klaus}) desenvolveu estudos sobre autômatos celulares envolvendo três estados e focou na formação de aglomerados. Dos três estados, dois ($+1$ e $-1$) eram competitivamente ativos pois competiam entre si e um -- o estado $0$ -- era competitivamente passivo pois não competia com os outros estados. A regra de atualização utilizada foi semelhante à de Stauffer, com a diferença de o limiar de cada célula permanecer constante ao longo de toda a simulação. Além disso, nesse modelo as células com pelo menos uma célula vizinha no estado $0$ têm chances aleatórias de mudar para o estado $0$. Por fim, Kramer relacionou os estudos realizados com áreas de transição entre biomas diferentes.
+Já em 2014, Klaus Kramer (Referência \cite{klaus}) desenvolveu estudos sobre autômatos celulares envolvendo três estados e focou na formação de aglomerados. O autômato celular dele funciona, de forma sintética, assim: O Autômato Celular tem três possíveis estados para cada célula (\texttt{-1}, \texttt{0} e \texttt{+1}); as células estão organizadas em uma malha quadrada; as oito celulas adjacentes formam a vizinhança de cada célula; a matriz de células é finita; células nas bordas interagem somente com as células nas bordas ou no interior da matriz; cada célula tem uma resistência à mudança (ou inércia) cujo valor fica entre $0$ e $8$, sendo $0$ equivalente a nenhuma resistência e $8$ equivalente a resistência total; existe uma chance de cada célula que tem uma vizinha no estado $0$ ser convertida para o estado $0$; ao ser atualizada, se a a célula tiver uma inércia maior que o valor absoluto da soma dos estados das células na vizinhança dela, a célula continua no mesmo estado; caso o valor da inércia da célula seja menor que o valor absoluto da soma da vizinhança, a célula muda para o estado \texttt{-1} ou \texttt{+1} dependendo se a soma é menor ou maior que $0$, respectivamente; se o valor da soma for zero, a célula continua no mesmo estado. Esse processo era repetido até que uma configuração estácionária fosse alcançada. Uma configuração era considerada estacionária se a média dos estados das últimas dez gerações estivesse dentro de $0.001\%$ da média dos estados dessa configuração.
 
-Tendo como base esses autores, o objetivo deste trabalho foi explorar a dinâmica oscilatória do autômato celular de Stauffer, juntando a ele a ideia de estudar aglomerados empreendida por Kramer, a fim de buscar padrões que possam ser associados a fenômenos naturais.
+Durante a análise, o valor da inércia foi igual para todas as células e não mudou durante as simulações. Os seguintes parâmetros foram utilizados: a densidade de cada estado, o tamanho médio dos aglomerados, o número de aglomerados, e o tempo de convergência para uma disposição estacionária. As matrizes iniciais foram criada parcialmente de forma aleatória, sendo que a densidade do estado \texttt{0} foi forçada para um valor pré-definido e o estado \texttt{+1} foi forçado a ser o dominante. O espaço de amostra para as simulações foi escolhido pelo autor: os conjuntos de dados escolhidos tinham uma matriz inicial com tamanho médio de aglomerados entre $2.4$ e $2.8$. Isso foi feito porque ``os valores resultaram numa melhor distribuição dos dados iniciais sobre o espaço de parâmetros''.
+
+Aglomerados foram considerados como sendo formados por duas ou mais células adjacentes ortogonalmente no mesmo estado. 
+Para a contagem dos aglomerados foi utilizado o algoritmo de Hoshen-Kopelman, que consiste em encontrar aglomerados, etiquetar os aglomerados encontrados, procurar aglomerados adjacentes, realizar a união desses aglomerados, e iterar os dois últimos passos até que não existam mais aglomerados adjacentes. A contagem de aglomerados foi implementada com o objetivo de estudar qualitativamente a evolução da distribuição espacial dos estados do sistema.
+
+Foi observado, para todos os valores de inércia, que a densidade de células positivas aumentou até o estado estacionário. A relação entre densidade inicial de células positivas e densidade final de células positivas ficou localmente linear no intervalo $[0.33, 0.36]$, sendo que \textbf{densidades maiores de células no estado positivo resultaram na diminuição de aglomerados positivos.}
+
+Também foi estudado, para larguras de matriz iguais a $20$ $40$ $60$ $100$ e $200$ células, qual a influência do tamanho da matriz sobre a dinâmica do sistema. Foi concluído que a densidade final de células no estado \texttt{+1} independe do tamanho do sistema.
+
+Sobre um comportamento anômalo para quando a inércia é igual à metade do número de células na vizinhança de cada célula, foi explicado que isso é devido ao fato de as mudanças de estado serem menos frequêntes quando isso acontece já que as células das bordas nunca atualizam nesse caso. Com isso, como as bordas têm muita influência em matrizes pequenas, o comportamento anômalo é criado.
+
+Finalmente, no estudo de ecótonos (região de sobrevivência de um estado/bioma entre a fronteira competitiva de outros dois estados/biomas), foi estudada a evolução de uma única matriz inicial considerando vários parâmetros diferentes. O objetivo foi mostrar que a emergência de ecótonos pode ser explicada através de um autômato celular. Comportamentos semelhantes aos reais foram observados para valores pequenos de inércia (0, 1 e 2). Quando o valor da inércia foi definido como $3$, houve a situação de o ecótono tomar conta de um dos outros dois biomas, quebrando o equilíbrio. Foi concluído que a única possibilidade de haver a expansão do estado \texttt{0} é se houver uma chance não-nula de qualquer célula nos outros estados com pelo menos uma célula vizinha no estado \texttt{0} mudar para o estado \texttt{0}.
 
 \section*{Objetivos}
 
+
 \subsection*{Objetivo geral:}
+Explorar a dinâmica de estados do autômato celular de Stauffer, juntando a ele a ideia de estudar aglomerados empreendida por Kramer, a fim de buscar padrões que possam ser associados a fenômenos naturais.
 
 \subsection*{Objetivos específicos:}
 \begin{enumerate}
@@ -492,12 +514,12 @@ Tendo como base esses autores, o objetivo deste trabalho foi explorar a dinâmic
 % ----------------------------------------------------------
 % PARTE
 % ----------------------------------------------------------
-\part{Preparação da pesquisa}
+%\part{O estudo}
 % ----------------------------------------------------------
 
 \chapter{Metodologia}
 
-\subsection*{Estudos iniciais}
+\section{Estudos iniciais}
 
 O primeiro passo para este estudo foi conhecer a produção científica sobre autômatos celulares na área da Física. Para isso foram lidos alguns artigos, incluindo:
 \begin{enumerate}
@@ -505,9 +527,9 @@ O primeiro passo para este estudo foi conhecer a produção científica sobre au
     \item Klaus Kramer: “Dinâmica de padrões em autômatos celulares com inércia” (Referência \cite{klaus});
     \item Gérard Weisbuch, Dietrich Stauffer: “Adjustment and social choice” (Referência \cite{stauffer});
 \end{enumerate}
-Também foram verificadas implementações de autômatos celulares  com o software de simulações científicas Netlogo. Ainda foi feita a leitura de alguns artigos sobre estatística e correlação para auxiliar na interpretação dos dados gerados pelas simulações. Adicionalmente, com o objetivo de obter conhecimento para criar implementações de autômatos celulares na linguagem de programação C, foram  lidos vários capítulos do livro “C programming: A modern approach, 2nd Edition” do autor K.N. King (Referência \cite{king}).
+Também foram verificadas implementações de autômatos celulares  com o software de simulações científicas Netlogo. Ainda foi feita a leitura de alguns artigos sobre estatística e correlação para auxiliar na interpretação dos dados gerados pelas simulações. Adicionalmente, com o objetivo de obter conhecimento para criar implementações de autômatos celulares na linguagem de programação C, foram  lidos 19 capítulos do livro “C programming: A modern approach, 2nd Edition” do autor K.N. King (Referência \cite{king}).
     
-\subsection*{Modelagem de autômatos}
+\section{Modelagem e implementação de autômatos}
 
 O primeiro desenvolvimento foi a percepção de características recorrentes nos autômatos celulares observados nos Estudos Iniciais.
 A seguinte lista de características de autômatos celulares foi produzida com base nos artigos e software explorados:\\
@@ -522,7 +544,7 @@ A seguinte lista de características de autômatos celulares foi produzida com b
 \underline{Superposição de estados:} se é possível que cada célula tenha mais de um estado ao mesmo tempo.\\
 \underline{Propriedades intrínsecas a cada célula:} características únicas a cada célula, além do estado.
 
-O autômatos celular não-homogêneo (InCA) de Stauffer foi modelado utilizando as características acima, resultando na descrição abaixo:\\
+O autômato celular não-homogêneo (InCA) de Stauffer foi modelado utilizando as características acima, resultando na descrição abaixo:\\
 \underline{Número de estados:} Dois estados, -1 e 1.\\
 \underline{Competitividade ou simbiose entre estados:} competitividade.\\
 \underline{Topologia do espaço:} quadrada de tamanho $L\times L$, onde $L$ é a \textit{largura da matriz} em unidades de números de células, com bordas fechadas. Células conectadas verticalmente e horizontalmente por vizinhança mais próxima, mas não diagonalmente..\\
@@ -534,85 +556,42 @@ O autômatos celular não-homogêneo (InCA) de Stauffer foi modelado utilizando 
 \underline{Regras para atualização das células:}  dada uma célula $\mathbf{x}$, caso ela seja atualizada, o limiar $\lambda_\mathbf{x}$ aumenta caso a célula fique +1 e diminui caso a célula fique -1. O valor $|\Delta\lambda_\mathbf{x}|$ é gerado aleatoriamente e está entre $0$ e $q$, onde $q$ é o \textit{ajuste máximo de limiar}.\\
 \underline{Superposição de estados:} Não, somente um estado por célula.\\
 
-
-Em seguida, esse modelo de autômatos celular foi implementado na linguagem C. Para cada simulação, a matriz foi inicializada com valores $-1$ ou $+1$ dispostos aleatoriamente mas de modo que a diferença entre o número de células positivas e o número de células negativas fosse menor que 1\% do número total de células na matriz. Para todas as células o limiar foi iniciado em $\lambda_\mathbf{x} = 0$. A Figura \ref{fig:matrizL100Ciclo0} exibe a matriz estado inicial gerada em uma execução do InCA implementado.
+Em seguida, esse modelo de autômatos celular foi implementado na linguagem C. Para cada simulação, a matriz foi inicializada com valores $-1$ ou $+1$ dispostos aleatoriamente de acordo com uma semente de geração de números aleatórios (\textit{seed}) baseada no horário de execução do programa. Não houve controle sobre a densidade de cada estado. Para todas as células o limiar foi iniciado em um número entre $-q$ e $+q$, onde $q$ é o ajuste máximo de limiar. A Figura \ref{fig:matrizL100Ciclo0} exibe a matriz estado inicial gerada em uma execução do InCA implementado.
 
 \begin{figure}
     \centering
-    %\includegraphics[width=0.7\linewidth]{matrizL100Ciclo0.png}
-    \caption{Representação gráfica da matriz de estados iniciais de uma simulação com $L=100$. Células pretas representam o estado $-1$ e células brancas representam o estado $+1$. A matriz de estados iniciais é gerada de forma a manter o número de células positivas próximo ao número de células negativas.}
+    \includegraphics[width=5cm]{matrizL100Ciclo0.png}
+    \caption{Representação gráfica da matriz de estados iniciais de uma simulação com $L=100$. Células pretas representam o estado $-1$ e células brancas representam o estado $+1$. A matriz de estados iniciais é gerada de forma aleatória, com semente baseada no horário de execução da simulação.}
     \label{fig:matrizL100Ciclo0}
 \end{figure}
 
-\section*{O algoritmo de contagem de aglomerados}
+A implementação do InCA foi planejada para imprimir várias informações sobre a situação da matriz: Ciclo, Estado Médio da matriz, Limiar Médio da matriz, e Número de Aglomerados. Um \textit{Ciclo} foi definido como sendo igual a $L\times L$ atualizações aleatórias de células na matriz, já que esse seria o número de atualizações de células caso o sistema fosse determinístico. Diferentemente de \cite{stauffer}, que executou as simulações somente para vizinhanças de VonNeumann (as 4 células ortogonais à célula central, nas posições norte, sul, leste e oeste), nós também fizemos as simulações para vizinhanças de Moore, que considera as 8 células vizinhas de uma célula central.
 
-O grande diferencial desta implementação do InCA, em relação ao estudo de Stauffer, foi a utilização de um algoritmo de contagem de aglomerados de células com o mesmo estado. Esse algoritmo, ilustrado na Figura \ref{fig:contamination}, encontra todas as células em um mesmo aglomerado através de ``contaminações'' sucessivas de células com o mesmo estado que são vizinhas entre si.
+\section{O algoritmo de contagem de aglomerados}
+
+O grande diferencial desta implementação do InCA, em relação ao estudo de Stauffer, foi a utilização de um algoritmo de contagem de aglomerados de células com o mesmo estado. Esse algoritmo, ilustrado na Figura \ref{fig:contamination}, encontra todas as células em um mesmo aglomerado através de ``contaminações'' sucessivas de células com o mesmo estado que são vizinhas ortogonais entre si.
 
 \begin{figure}
     \centering
-    %\includegraphics[width=.7\linewidth]{contamination.png}
-    \caption{Algoritmo de contagem de aglomerados por contaminação de células vizinhas com o mesmo estado. Cada aglomerado é contaminado a partir de uma primeira célula até que não existam mais células a serem contaminadas. Na figura, a primeira célula é a central (em vermelho). Em seguida, as quatro células adjacentes a essa célula são contaminadas. No passo seguinte as oito células adjacentes a essas quatro células são contaminadas. O processo é repetido até que não existam mais células a serem contaminadas.}
+    \includegraphics[width=5cm]{contamination.png}
+    \caption{Algoritmo de contagem de aglomerados por contaminação de células ortogonalmente vizinhas e com o mesmo estado. Cada aglomerado é contaminado a partir de uma primeira célula até que não existam mais células a serem contaminadas. Na figura, a primeira célula é a central (em vermelho). Em seguida, as quatro células adjacentes a essa célula são contaminadas. No passo seguinte as oito células adjacentes a essas quatro células são contaminadas. O processo é repetido até que não existam mais células a serem contaminadas.}
     \label{fig:contamination}
 \end{figure}
 
-A implementação do InCA foi planejada para imprimir várias informações sobre a situação da matriz: Ciclo, Estado Médio da matriz, Limiar Médio da matriz, Número de Aglomerados e Índice de células Positivas que Pertencem a Algum Aglomerado (número total de células positivas em algum aglomerado dividido pelo número total de células na matriz). Um \textit{Ciclo} foi definido como sendo igual a $L\times L$ atualizações aleatórias de células na matriz, já que esse seria o número de atualizações de células caso o sistema fosse determinístico.
 
-\section*{Metodologias de análise}
 
-\subsection*{A correlação entre estado médio e número de aglomerados}
+\section{Metodologias de análise}
 
-\subsection*{Afinidade}
+As análises foram feitas com base nos dados de estado médio, limiar médio, e número de aglomerados em função do ciclo da simulação. Nesses gráficos foram buscados padrões recorrentes, como retas, parábolas ou elipses.
 
-\subsection*{Afinidade para vizinhanças de Von Neumann}
+\subsection{A correlação entre estado médio e número de aglomerados}
 
-\subsection*{Afinidade para vizinhanças de Moore}
+O estudo da correlação entre estado médio e número de aglomerados foi motivado pela percepção de que os gráficos de número de aglomerados \textit{versus} estado médio sempre apresentavam inclinações com o mesmo sinal. Apesar de curto, este serviu de gatilho para o estudo de afinidades.
 
-\subsection*{Caos}
+\subsection{Afinidade}
 
-\subsection*{Caos em vizinhanças de Von Neumann}
+\subsection{Caos}
 
-\subsection*{Caos em vizinhanças de Moore}
-
-As análises foram feitas graficamente com os dados de estado médio, limiar médio, número de aglomerados e índice de células pertencentes a aglomerados em função do ciclo da simulação. Nesses gráficos foram buscados padrões recorrentes, como retas, parábolas ou elipses. Para isso foram feitas 288 simulações, variando a largura da matriz pelos valores 100, 250,
-500,
-750,
-1000,
-1250,
-1500,
-1750 e
-2000, e o ajuste máximo de limiar entre os valores 0.5,
-0.75,
-1,
-1.5,
-2,
-3,
-4,
-5,
-6,
-7,
-8,
-9,
-10,
-11,
-12,
-13,
-14,
-15,
-16,
-17,
-18,
-19,
-20,
-25,
-30,
-35,
-40,
-45,
-50,
-100,
-150,
-200 e
-500.
 
 \chapter{Resultados e Análises}
 
