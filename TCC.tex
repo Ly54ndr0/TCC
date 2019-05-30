@@ -71,7 +71,7 @@
 % ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
-
+\usepackage{subfig}
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
@@ -711,7 +711,32 @@ Considerando que computadores geram números aleatórios a partir de uma \textit
     \item Execução da simulação para 10000 ciclos utilizando $L=100$, limiar igual a $q$ e uma \textit{seed} igual a $S2$ (também gerada em uma Casio);
   \end{enumerate}
 	Esse procedimento foi feito para $n\in\{0, 1, 10, 100, 1000, 10000\}$ e $q\in\{0.1, 1,$ $2,$ $3,$ $4,$ $5,$ $6,$ $7,$ $8,$ $9,$ $10\}$.\\
-	Para a vizinhança de VonNeumann foram utilizadas as \textit{seeds} $S1=263598624$ e $S2=33386826$. Para a vizinhança de Moore foram utilizadas as \textit{seeds} $S1=156501936$ e $S2=2376222$.
+  Para a vizinhança de VonNeumann foram utilizadas as \textit{seeds} $S1=263598624$ e $S2=33386826$. Para a vizinhança de Moore foram utilizadas as \textit{seeds} $S1=156501936$ e $S2=2376222$. Representações gráficas dessas sementes estão dispostas nas Figuras \ref{fig:matrizInicialCaosMoore} e \ref{fig:matrizInicialCaosVonNeumann}.
+  \begin{figure}[h]
+    \subfloat[Matriz estado. Em branco o estado \texttt{-1}. Em preto o estado \texttt{+1}.]
+    {
+      \includegraphics[width=0.45\textwidth]{seed156501936.png}
+    }\hfill
+    \subfloat[Matriz limiar normalizada. Em branco o limiar mais alto. Em preto o limiar mais negativo.]
+    {
+      \includegraphics[width=0.45\textwidth]{seed156501936thres.png}
+    }
+    \caption{Matrizes iniciais geradas com a \textit{seed} 156501936. Essas matrizes foram utilizadas em todas as simulações de estudo de caos com vizinhança de Moore.}
+    \label{fig:matrizInicialCaosMoore}
+  \end{figure}
+
+  \begin{figure}
+    \subfloat[Matriz estado. Em branco o estado \texttt{-1}. Em preto o estado \texttt{+1}.]
+    {
+      \includegraphics[width=0.45\textwidth]{seed263598624.png}
+    }\hfill
+    \subfloat[Matriz limiar normalizada. Em branco o limiar mais alto. Em preto o limiar mais negativo.]
+    {
+      \includegraphics[width=0.45\textwidth]{seed263598624thres.png}
+    }
+    \caption{Matrizes iniciais geradas com a \textit{seed} 263598624. Essas matrizes foram utilizadas em todas as simulações de estudo de caos com vizinhança de VonNeumann.}
+    \label{fig:matrizInicialCaosVonNeumann}
+  \end{figure}
 	
 
   A verificação da existência de caos foi feita considerando o coeficiente de Lyapunov

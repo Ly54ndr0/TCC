@@ -29,7 +29,7 @@
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{39}{section*.19}
+\contentsline {part}{\uppercase {Ap\^endices}}{39}{section*.28}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -42,7 +42,7 @@
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{45}{section*.20}
+\contentsline {part}{\uppercase {Anexos}}{45}{section*.29}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -57,4 +57,4 @@
 \contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{51}{appendix.anexochapback.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\'Indice}{53}{section*.22}
+\contentsline {chapter}{\'Indice}{53}{section*.31}
