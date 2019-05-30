@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  30 MAY 2019 05:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  30 MAY 2019 17:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,30 +933,103 @@ File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 )) (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count170
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip264
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen160
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen161
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count171
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count172
+\leftroot@=\count173
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count174
+\DOTSCASE@=\count175
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen162
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count176
+\c@MaxMatrixCols=\count177
+\dotsspace@=\muskip11
+\c@parentequation=\count178
+\dspbrk@lvl=\count179
+\tag@help=\toks30
+\row@=\count180
+\column@=\count181
+\maxfields@=\count182
+\andhelp@=\toks31
+\eqnshift@=\dimen163
+\alignsep@=\dimen164
+\tagshift@=\dimen165
+\tagwidth@=\dimen166
+\totwidth@=\dimen167
+\lineht@=\dimen168
+\@envbody=\toks32
+\multlinegap=\skip265
+\multlinetaggap=\skip266
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks34
+\thm@bodyfont=\toks35
+\thm@headfont=\toks36
+\thm@notefont=\toks37
+\thm@headpunct=\toks38
+\thm@preskip=\skip267
+\thm@postskip=\skip268
+\thm@headsep=\skip269
+\dth@everypar=\toks39
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2012/07/25 v1.38 Bibliographical back referencing
 ) (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
  (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip264
-\ABCIauxlen=\skip265
-\c@ABCIaux=\count171
-\c@ABCImax=\count172
+\minimumbiblabelwidth=\skip270
+\ABCIauxlen=\skip271
+\c@ABCIaux=\count183
+\c@ABCImax=\count184
  (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\biblabelsep=\skip266
+\biblabelsep=\skip272
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks29
+\ABCItoken=\toks40
 )
-Package color Info: Redefining color blue on input line 118.
-Package hyperref Info: Option `colorlinks' set `true' on input line 135.
-\c@quadro=\count173
-\c@loqdepth=\count174
-\cftbeforequadroskip=\skip267
-\cftquadroindent=\skip268
-\cftquadronumwidth=\skip269
+Package color Info: Redefining color blue on input line 120.
+Package hyperref Info: Option `colorlinks' set `true' on input line 137.
+\c@quadro=\count185
+\c@loqdepth=\count186
+\cftbeforequadroskip=\skip273
+\cftquadroindent=\skip274
+\cftquadronumwidth=\skip275
 \TCC@idxfile=\write4
 \openout4 = `TCC.idx'.
 
@@ -965,57 +1038,57 @@ Writing index file TCC.idx
 (/home/ly/Documents/TCC/LaTeX-TCC/TCC.aux)
 \openout1 = `TCC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 186.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 188.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring ON on input line 186.
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring ON on input line 188.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count175
+\c@section@level=\count187
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 186.
-LaTeX Info: Redefining \ref on input line 186.
-LaTeX Info: Redefining \pageref on input line 186.
-LaTeX Info: Redefining \nameref on input line 186.
-LaTeX Info: Redefining \degres on input line 186.
-LaTeX Info: Redefining \dots on input line 186.
-LaTeX Info: Redefining \up on input line 186.
-\myptabbox=\box31
-\myptabboxwidth=\skip270
+LaTeX Info: Redefining \nameref on input line 188.
+LaTeX Info: Redefining \ref on input line 188.
+LaTeX Info: Redefining \pageref on input line 188.
+LaTeX Info: Redefining \nameref on input line 188.
+LaTeX Info: Redefining \degres on input line 188.
+LaTeX Info: Redefining \dots on input line 188.
+LaTeX Info: Redefining \up on input line 188.
+\myptabbox=\box33
+\myptabboxwidth=\skip276
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
-\scratchdimen=\dimen160
-\scratchbox=\box32
-\nofMPsegments=\count177
-\nofMParguments=\count178
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count179
-\MPscratchDim=\dimen161
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count188
+\scratchdimen=\dimen169
+\scratchbox=\box34
+\nofMPsegments=\count189
+\nofMParguments=\count190
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count191
+\MPscratchDim=\dimen170
+\MPnumerator=\count192
+\makeMPintoPDFobject=\count193
+\everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1027,7 +1100,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 186.
+LaTeX Info: Redefining \microtypecontext on input line 188.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1040,7 +1113,7 @@ Package microtype Info: No adjustment of character kerning.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 203.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 205.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1053,65 +1126,76 @@ Package microtype Info: Loading generic settings for font family
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 212.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 214.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 212.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 214.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 212.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 214.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 212.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 214.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 212.
+(Font)              <12> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 212.
+(Font)              <8> on input line 214.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 212.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+(Font)              <6> on input line 214.
+LaTeX Font Info:    Try loading font information for U+msa on input line 214.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 214.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.212 
+l.214 
        [1
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 
  []
 
 
-Overfull \hbox (16.6597pt too wide) in paragraph at lines 256--256
+Overfull \hbox (16.6597pt too wide) in paragraph at lines 258--258
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--256
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 256.
+(Font)              <10> on input line 258.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 256.
+(Font)              <7> on input line 258.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 256.
+(Font)              <5> on input line 258.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.356 A
+l.358 A
        gradeço ao meu Orientador Marlus Koehler pela liberdade e pela confi... [2] [3
 
 ] [4
@@ -1122,9 +1206,12 @@ l.356 A
 
 ] [9] [10
 
-] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lof) [11] [12
+] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lof)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.loq) [13] [14
+ [11] [12] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.loq) [13
+
+] [14
 
 ] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lot) [15] [16
 
@@ -1149,31 +1236,33 @@ Overfull \hbox (1.3121pt too wide) in paragraph at lines 40--40
  \T1/lmss/bx/n/12 SO-DA-LES ELIT IP-SUM PHA-RE-TRA LI-GULA AC 
  []
 
-) [21] [22
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [21] [22]
 
-LaTeX Warning: Citation `britannica1' on page 23 undefined on input line 465.
-
-
-LaTeX Warning: Citation `britannica2' on page 23 undefined on input line 465.
+LaTeX Warning: Citation `britannica1' on page 23 undefined on input line 467.
 
 
-LaTeX Warning: Citation `britannica3' on page 23 undefined on input line 467.
+LaTeX Warning: Citation `britannica2' on page 23 undefined on input line 467.
 
 
-LaTeX Warning: Citation `stauffer' on page 23 undefined on input line 482.
+LaTeX Warning: Citation `britannica3' on page 23 undefined on input line 469.
+
+
+LaTeX Warning: Citation `stauffer' on page 23 undefined on input line 484.
 
 [23
 
+
 ]
 
-LaTeX Warning: Citation `stauffer' on page 24 undefined on input line 484.
+LaTeX Warning: Citation `stauffer' on page 24 undefined on input line 486.
 
 
-LaTeX Warning: Citation `klaus' on page 24 undefined on input line 488.
+LaTeX Warning: Citation `klaus' on page 24 undefined on input line 490.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 488.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 490.
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1186,89 +1275,102 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25] [26]
 
-LaTeX Warning: Citation `lazzari' on page 27 undefined on input line 526.
+LaTeX Warning: Citation `lazzari' on page 27 undefined on input line 528.
 
 
-LaTeX Warning: Citation `klaus' on page 27 undefined on input line 527.
+LaTeX Warning: Citation `klaus' on page 27 undefined on input line 529.
 
 
-LaTeX Warning: Citation `stauffer' on page 27 undefined on input line 528.
+LaTeX Warning: Citation `stauffer' on page 27 undefined on input line 530.
 
 
-LaTeX Warning: Citation `king' on page 27 undefined on input line 530.
+LaTeX Warning: Citation `king' on page 27 undefined on input line 532.
 
 [27
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 547--558
+Underfull \hbox (badness 10000) in paragraph at lines 549--560
 
  []
 
-<matrizL100Ciclo0.png, id=253, 48.18pt x 48.18pt>
+<matrizL100Ciclo0.png, id=262, 48.18pt x 48.18pt>
 File: matrizL100Ciclo0.png Graphic file (type png)
  <use matrizL100Ciclo0.png>
-Package pdftex.def Info: matrizL100Ciclo0.png used on input line 563.
+Package pdftex.def Info: matrizL100Ciclo0.png used on input line 565.
 (pdftex.def)             Requested size: 142.26378pt x 142.287pt.
 
 
-LaTeX Warning: Citation `stauffer' on page 28 undefined on input line 568.
+LaTeX Warning: Citation `stauffer' on page 28 undefined on input line 570.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28] <contamination.png, id=261, 198.7425pt x 198.7425pt>
+ [28] <contamination.png, id=270, 198.7425pt x 198.7425pt>
 File: contamination.png Graphic file (type png)
  <use contamination.png>
-Package pdftex.def Info: contamination.png used on input line 576.
+Package pdftex.def Info: contamination.png used on input line 578.
 (pdftex.def)             Requested size: 142.26378pt x 142.26659pt.
- [29 </home/ly/Documents/TCC/LaTeX-TCC/matrizL100Ciclo0.png (PNG copy)>] [30 </home/ly/Documents/TCC/LaTeX-TCC/contamination.png>] [31
+ [29 </home/ly/Documents/TCC/LaTeX-TCC/matrizL100Ciclo0.png (PNG copy)>] [30 </home/ly/Documents/TCC/LaTeX-TCC/contamination.png>] <ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png, id=289, 610.28pt x 343.2825pt>
+File: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png Graphic file (type png)
+ <use ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png>
+Package pdftex.def Info: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png used on input line 612.
+(pdftex.def)             Requested size: 341.25pt x 191.95926pt.
+ [31 </home/ly/Documents/TCC/LaTeX-TCC/ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32] [33] [34] [35
 
 ]
 
-LaTeX Warning: Reference `fig:afinidadesHeatmap' on page 32 undefined on input line 648.
+LaTeX Warning: Reference `fig:afinidadesHeatmap' on page 36 undefined on input line 783.
 
 
-LaTeX Warning: Reference `fig:afinidadeMedia' on page 32 undefined on input line 653.
+LaTeX Warning: Reference `fig:afinidadeMedia' on page 36 undefined on input line 788.
 
 
-LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 32 undefined on input line 655.
+LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 36 undefined on input line 790.
 
-[32]
+[36]
 
-LaTeX Warning: Reference `fig:afinidadeMedia' on page 33 undefined on input line 676.
+LaTeX Warning: Reference `fig:afinidadeMedia' on page 37 undefined on input line 811.
 
 No file TCC.bbl.
-[33
-
-] [34
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 708.
-
-[35
-
-] [36] [37
+[37
 
 ] [38
 
-] [39] [40
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 843.
+
+[39
+
+] [40] [41
+
+] [42
+
+] [43] [44
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 736.
+(hyperref)                removing `\uppercase' on input line 871.
 
-[41
+[45
 
-] [42] [43
+] [46] [47
 
-] [44
+] [48
 
-] [45] [46
+] [49] [50
 
-] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.ind) [47]
+] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.ind [51] [52
+
+] [53
+
+
+])
 \tf@lof=\write5
 \openout5 = `TCC.lof'.
 
@@ -1281,30 +1383,30 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@toc=\write8
 \openout8 = `TCC.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 899.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 899.
  (/home/ly/Documents/TCC/LaTeX-TCC/TCC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 764.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 899.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 899.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 899.
  ) 
 Here is how much of TeX's memory you used:
- 14145 strings out of 493029
- 209124 string characters out of 6136233
- 472620 words of memory out of 5000000
- 17210 multiletter control sequences out of 15000+600000
- 95278 words of font info for 136 fonts, out of 8000000 for 9000
+ 15171 strings out of 493029
+ 221329 string characters out of 6136233
+ 488599 words of memory out of 5000000
+ 18149 multiletter control sequences out of 15000+600000
+ 99207 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,13n,36p,1965b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (49 pages, 305101 bytes).
+ 40i,13n,36p,1965b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (55 pages, 401837 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 450 compressed objects within 5 object streams
- 111 named destinations out of 1000 (max. 500000)
- 32507 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 598 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 32520 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -62,6 +62,8 @@
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
 % ---
 \usepackage{lipsum}				% para geração de dummy text
+\usepackage{enumerate}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
 % ---
 
 % ---
@@ -569,7 +571,7 @@ A implementação do InCA foi planejada para imprimir várias informações sobr
 
 \section{O algoritmo de contagem de aglomerados}
 
-O grande diferencial desta implementação do InCA, em relação ao estudo de Stauffer, foi a utilização de um algoritmo de contagem de aglomerados de células com o mesmo estado. Esse algoritmo, ilustrado na Figura \ref{fig:contamination}, encontra todas as células em um mesmo aglomerado através de ``contaminações'' sucessivas de células com o mesmo estado que são vizinhas ortogonais entre si.
+O grande diferencial desta implementação do InCA, em relação ao estudo de Stauffer, foi a utilização de um algoritmo de contagem de aglomerados de células com o mesmo estado. Esse algoritmo, ilustrado na Figura \ref{fig:contamination}, encontra todas as células em um mesmo aglomerado através de ``contaminações'' sucessivas de células com o mesmo estado que são vizinhas ortogonais entre si. Nós desenvolvemos este algoritmo porque o algoritmo de Hoshen-Kopelman, utilizado na pesquisa de Kramer, se mostrou muito ineficiente e demorado.
 
 \begin{figure}
     \centering
@@ -578,7 +580,21 @@ O grande diferencial desta implementação do InCA, em relação ao estudo de St
     \label{fig:contamination}
 \end{figure}
 
+ Definiremos, matematicamente, uma \index{contaminação}\textbf{contaminação} como: dado um conjunto $C_0$ de células com o mesmo estado numa matriz ortogonal, a contaminação de $C_0$ é denotada por $\overline{C_0}$ e definida como sendo o conjunto que tem por elementos todas as células da matriz que têm alguma célula de $C_0$ ortogonalmente vizinha e estão no mesmo estado das células de $C_0$. 
 
+ Utilizando a definição acima, definiremos o algoritmo de contagem de aglomerados de células \texttt{+1} em uma matriz finita assim: 
+\begin{enumerate}
+	\item crie uma matriz booleana auxiliar de mesma dimensão e tamanho que a matriz original de células e inicie ela com o valor \texttt{false};
+	%\item passando por cada célula da matriz original, verifique se o valor na posição correspondente na matriz auxiliar está em \texttt{true} ou o estado da célula na matriz original é \texttt{-1}. Se qualquer uma dessas interrogações for verdadeira, passe para a próxima célula da matriz original, repetindo este passo. Caso contrário, realize o próximo passo;
+	%\item marque a posição correspondente da célula na matriz auxiliar como \texttt{true} e adicione a mesma a uma fila de espera (\textit{queue}). 
+	\item passe por cada célula $c_i$ da matriz original. Se o estado da célula for \texttt{-1}, pule para a próxima célula. Se a posição correspondente dessa célula na matriz auxiliar tiver valor \texttt{true}, pule para a próxima célula. Caso contrário, execute o passo abaixo.
+	\item dado o conjunto unitário inicial $C_0=\{c_i\}$, itere contaminações até que $C_n=\overline{C_n}$. Marque as posições equivalentes das células em $C_n$ na matriz auxiliar como \texttt{true}. Se o número de elementos em $C_n$ for maior que $1$, incremente o contador de número de aglomerados.
+	\item repita o passo 2 até que todas as células da matriz tenham sido verificadas.
+\end{enumerate}
+
+O leitor com experiência em conjuntos perceberá que o conjunto de células contaminadas no passo $n$ é dado por $\overline{C_{n-1}}-C_{n-1}=C_n-C_{n-1}$ e que quando $C_{n-1}=\overline{C_{n-1}}=C_n$ teremos que o conjunto de células contaminadas é $C_n-C_{n-1}=C_n-C_n=\emptyset$. Portanto, a condição de término do processo de contaminação é equivalente ao momento em que não existem mais células a serem contaminadas.
+
+Este algoritmo tem complexidade $O(N)$ (vide REFERÊNCIA ALGORITHMS MANUAL), onde $N$ é o número total de células na matriz. Isso pode ser facilmente verificado, considerando que cada célula $c$ será verificada no máximo $v(c)+1$, onde $v$ é uma função que retorna o número de células de uma dada célula. Para vizinhanças de VonNeumann, esse número é $5$ e para vizinhanças de Moore esse número é $9$, ambas em duas dimensões. Esse é um avanço considerável em comparação com o algoritmo de  Hoshen-Kopelman que, por análise prória do autor deste trabalho, demonstrou ter complexidade $O(N^2)$.
 
 \section{Metodologias de análise}
 
@@ -590,8 +606,127 @@ O estudo da correlação entre estado médio e número de aglomerados foi motiva
 
 \subsection{Afinidade}
 
+Como mencionado acima, foi percebido que o número de aglomerados estava relacionado ao estado médio da matriz. De fato, essa relação se mostrou aproximadamente linear para todos os conjuntos de dados obtidos, como ilustrado na Figura \ref{fig:exemploAfinidade}. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.75\linewidth]{ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png}
+    \caption{Exemplo de como o número de aglomerados (eixo vertical) tende a ser linearmente dependente ao estado médio (eixo horizontal). Este gráfico contém 20000 pontos de dados obtidos numa simulação com ajuste máximo de limiar igual a $5.00$, largura de matriz igual a $50$ e vizinhança de Moore. Esse padrão foi observado em todas as outras medições realizadas. Fonte: produção própria.}
+    \label{fig:exemploAfinidade}
+\end{figure}
+Considerando que todas as inclinações eram negativas, de modo que estados médios positivos implicavam em um número menor de aglomerados e estados médios negativos implicavam em um número maior de aglomerados, foi percebido que a inclinação da reta que melhor aproximava esses conjuntos de pontos representava a tendência de as células da matriz se aglomerarem, surgindo daí, o nome afinidade. Tecnicamente, definimos afinidade assim:
+
+\textbf{Definição:} No InCA, seja $I_{q,L}$ a inclinação da reta que melhor aproxima os dados obtidos para número de aglomerados em função do estado médio em uma simulação com ajuste máximo de limiar igual a $q$ e largura de matriz $L$. Seja $Imin_L$ a menor inclinação encontrada entre todas as simulações para um dado $L$. Definimos a \textit{afinidade em função de $q$ e $L$} como sendo $A_{q,L}=-I_{q,L}/Imin_L$.
+
+Esse padrão foi observado tanto para vizinhanças de VonNeumann como para vizinhanças de Moore, e os estudos foram feitos sobre como a afinidade se comporta quando os valores de $q$ e $L$ são alterados, além das diferenças entre os dados obtidos para ambas as vizinhanças.
+
+Para a vizinhança de VonNeumann, as seguintes coleções de dados foram obtidas:\\
+$\bullet$ Cinco conjunto de dados, com 20000 pontos cada, para cada combinação de $q$ e $L$ com $q\in\{$ 
+  $0.1,$ $0.2,$ $0.3,$ $0.4,$ $0.5,$ $0.6,$ $0.7,$ $0.8,$ $0.9,$
+  $1,$ $1.2,$ $1.4,$ $1.6,$ $1.8,$ 
+  $2,$ $2.2,$ $2.4,$ $2.6,$ $2.8,$ 
+  $3,$ $3.2,$ $3.4,$ $3.6,$ $3.8,$
+  $4,$ $4.2,$ $4.4,$ $4.6,$ $4.8,$
+  $5,$ $5.2,$ $5.4,$ $5.6,$ $5.8,$
+  $6,$ $6.2,$ $6.4,$ $6.6,$ $6.8,$
+  $7,$ $7.2,$ $7.4,$ $7.6,$ $7.8,$
+  $8,$ $8.2,$ $8.4,$ $8.6,$ $8.8,$
+  $9,$ $9.2,$ $9.4,$ $9.6,$ $9.8,$ $10,$
+  $11,$ $12,$ $13,$ $14,$ $15,$ $16,$ $17,$ $18,$ $19,$ $20,$
+  $22,$ $24,$ $26,$ $28,$ $30,$ $32,$ $34,$ $36,$ $38,$ $40,$
+  $42,$ $44,$ $46,$ $48,$ $50,$ $52,$ $54,$ $56,$ $58,$ $60,$
+  $65,$ $70,$ $75,$ $80,$ $85,$ $90,$ $95,$ $100,$ $110,$
+  $120,$ $130,$ $140,$ $150,$ $160,$ $170,$ $180,$ $190,$
+  $200,$ $220,$ $240,$ $260,$ $280,$ $300,$ $320,$ $340,$ $360,$ $380,$
+  $400,$ $420,$ $440,$ $460,$ $480,$ $500,$ $520,$ $540,$ $560,$ $580,$
+  $600,$ $620,$ $640,$ $660,$ $680,$ $700,$ $720,$ $740,$ $760,$ $780,$
+  $800,$ $820,$ $840,$ $860,$ $880,$ $900,$ $920,$ $940,$ $960,$ $980,$
+	$1000\}$ e $L\in \{50, 100, 250\}$.\\
+	$\bullet$ Cinco conjunto de dados, com 10000 pontos cada, para $L=500$ e $q\in\{$
+  $0.2,$ $0.4,$ $0.6,$ $0.8,$ $1,$
+  $1.2,$ $1.4,$ $1.6,$ $1.8,$	$2,$
+  $2.2,$ $2.4,$ $2.6,$ $2.8,$ $3,$
+  $3.2,$ $3.4,$ $3.6,$ $3.8,$ $4,$
+  $4.2,$ $4.4,$ $4.6,$ $4.8,$ $5,$
+  $5.2,$ $5.4,$ $5.6,$ $5.8,$ $6,$
+  $6.2,$ $6.4,$ $6.6,$ $6.8,$ $7,$
+  $7.2,$ $7.4,$ $7.6,$ $7.8,$ $8,$
+  $8.2,$ $8.4,$ $8.6,$ $8.8,$ $9,$
+  $9.2,$ $9.4,$ $9.6,$ $9.8,$ $10$
+	$\}$. \\
+	Esse intervalo de $q$ entre 0 e 10 foi escolhido porque o principal fenômeno estudado acontecia entre esses valores. O tempo de simulação também foi um fator importante para a redução dos parâmetros utilizados (para $L=500$ a simulação chegou a durar mais de 12 horas, mesmo com parâmetros reduzidos).
+
+	Já para a vizinhança de Moore, foram obtidas as seguintes coleções de dados:\\
+	$\bullet$ Cinco conjuntos de 20000 pontos que considerou $L=50$ e $q\in\{$ 
+  $0.1,$ $0.2,$ $0.3,$ $0.4,$ $0.5,$ $0.6,$ $0.7,$ $0.8,$ $0.9,$
+  $1,$ $1.2,$ $1.4,$ $1.6,$ $1.8,$ 
+  $2,$ $2.2,$ $2.4,$ $2.6,$ $2.8,$ 
+  $3,$ $3.2,$ $3.4,$ $3.6,$ $3.8,$
+  $4,$ $4.2,$ $4.4,$ $4.6,$ $4.8,$
+  $5,$ $5.2,$ $5.4,$ $5.6,$ $5.8,$
+  $6,$ $6.2,$ $6.4,$ $6.6,$ $6.8,$
+  $7,$ $7.2,$ $7.4,$ $7.6,$ $7.8,$
+  $8,$ $8.2,$ $8.4,$ $8.6,$ $8.8,$
+  $9,$ $9.2,$ $9.4,$ $9.6,$ $9.8,$ $10,$
+  $11,$ $12,$ $13,$ $14,$ $15,$ $16,$ $17,$ $18,$ $19,$ $20,$
+  $22,$ $24,$ $26,$ $28,$ $30,$ $32,$ $34,$ $36,$ $38,$ $40,$
+  $42,$ $44,$ $46,$ $48,$ $50,$ $52,$ $54,$ $56,$ $58,$ $60,$
+  $65,$ $70,$ $75,$ $80,$ $85,$ $90,$ $95,$ $100,$ $110,$
+  $120,$ $130,$ $140,$ $150,$ $160,$ $170,$ $180,$ $190,$
+  $200,$ $220,$ $240,$ $260,$ $280,$ $300,$ $320,$ $340,$ $360,$ $380,$
+  $400,$ $420,$ $440,$ $460,$ $480,$ $500,$ $520,$ $540,$ $560,$ $580,$
+  $600,$ $620,$ $640,$ $660,$ $680,$ $700,$ $720,$ $740,$ $760,$ $780,$
+  $800,$ $820,$ $840,$ $860,$ $880,$ $900,$ $920,$ $940,$ $960,$ $980,$
+  $1000\}$. \\
+	$\bullet$ Cinco conjuntos de 10000 pontos que considerou $L\in\{$ $100,$ $250,$ $500$ $\}$  e $q\in\{$ 
+  $0.2,$ $0.4,$ $0.6,$ $0.8,$
+  $1,$ $1.2,$ $1.4,$ $1.6,$ $1.8,$ 
+  $2,$ $2.2,$ $2.4,$ $2.6,$ $2.8,$ 
+  $3,$ $3.2,$ $3.4,$ $3.6,$ $3.8,$
+  $4,$ $4.2,$ $4.4,$ $4.6,$ $4.8,$
+  $5,$ $5.2,$ $5.4,$ $5.6,$ $5.8,$
+  $6,$ $6.2,$ $6.4,$ $6.6,$ $6.8,$
+  $7,$ $7.2,$ $7.4,$ $7.6,$ $7.8,$
+  $8,$ $8.2,$ $8.4,$ $8.6,$ $8.8,$
+  $9,$ $9.2,$ $9.4,$ $9.6,$ $9.8,$ $10,$
+  $11,$ $12,$ $13,$ $14,$ $15,$ $16,$ $17,$ $18,$ $19,$ $20,$
+  $22,$ $24,$ $26,$ $28,$ $30,$ $32,$ $34,$ $36,$ $38,$ $40,$
+	$42,$ $44,$ $46,$ $48,$ $50$ $\}$\\
+	$\bullet$ Obtenção de cinco conjuntos de 10000 pontos, para uma simulação que utilizou a vizinhança de Moore (8 células adjacentes), e considerou $L=500$  e $q\in\{$ 
+  $0.2,$ $0.4,$ $0.6,$ $0.8,$
+  $1,$ $1.2,$ $1.4,$ $1.6,$ $1.8,$ 
+  $2,$ $2.2,$ $2.4,$ $2.6,$ $2.8,$ 
+  $3,$ $3.2,$ $3.4,$ $3.6,$ $3.8,$
+  $4,$ $4.2,$ $4.4,$ $4.6,$ $4.8,$
+  $5,$ $5.2,$ $5.4,$ $5.6,$ $5.8,$
+  $6,$ $6.2,$ $6.4,$ $6.6,$ $6.8,$
+  $7,$ $7.2,$ $7.4,$ $7.6,$ $7.8,$
+  $8,$ $8.2,$ $8.4,$ $8.6,$ $8.8,$
+  $9,$ $9.2,$ $9.4,$ $9.6,$ $9.8,$ $10$ $\}$
 \subsection{Caos}
 
+Considerando que computadores geram números aleatórios a partir de uma \textit{seed}, foi verificada a presença de caos utilizando o seguinte método:
+  \begin{enumerate}
+    \item Geração da matriz inicial com uma \textit{seed} $S1$ (gerada com a função de números aleatórios de uma calculadora Casio);
+    \item Inversão do sinal do estado e do limiar de $n$ células em posições aleatórias geradas com uma \textit{seed} baseada no horário mundial;
+    \item Execução da simulação para 10000 ciclos utilizando $L=100$, limiar igual a $q$ e uma \textit{seed} igual a $S2$ (também gerada em uma Casio);
+  \end{enumerate}
+	Esse procedimento foi feito para $n\in\{0, 1, 10, 100, 1000, 10000\}$ e $q\in\{0.1, 1,$ $2,$ $3,$ $4,$ $5,$ $6,$ $7,$ $8,$ $9,$ $10\}$.\\
+	Para a vizinhança de VonNeumann foram utilizadas as \textit{seeds} $S1=263598624$ e $S2=33386826$. Para a vizinhança de Moore foram utilizadas as \textit{seeds} $S1=156501936$ e $S2=2376222$.
+	
+
+  A verificação da existência de caos foi feita considerando o coeficiente de Lyapunov
+  \begin{align}
+    \lambda = \dfrac{1}{n} \mathrm{ln}\left|\dfrac{f^n(x+\varepsilon) - f^n(x_0)}{\varepsilon}\right| = \dfrac{1}{n} \mathrm{ln}(\Delta)
+  \end{align}
+  Porém, considerando que $\mathrm{ln}(0)=-\infty$ e que computadores não lidam muito bem com infinito, foram feitas as seguintes observações com o intuito de desenvolver um coeficiente equivalente:
+  \begin{enumerate}
+    \item $\forall \Delta > 0$ tem-se que $\lambda < 0 \Leftrightarrow \mathrm{e}^\lambda < 1 \Leftrightarrow \Delta^\frac{1}{n} < 1 \Leftrightarrow \Delta^\frac{1}{10} < 1 \Rightarrow$ sistema estável 
+    \item $\forall \Delta > 0$ tem-se que $\lambda = 0 \Leftrightarrow \mathrm{e}^\lambda = 1 \Leftrightarrow \Delta^\frac{1}{n} = 1 \Leftrightarrow \Delta^\frac{1}{10} = 1$ 
+    \item $\forall \Delta > 0$ tem-se que $\lambda > 0 \Leftrightarrow \mathrm{e}^\lambda > 1 \Leftrightarrow \Delta^\frac{1}{n} > 1 \Leftrightarrow \Delta^\frac{1}{10} > 1 \Rightarrow$ sistema caótico 
+  \end{enumerate}
+ (O número 10 foi tomado arbitrariamente com a finalidade de diminuir números grandes). Portanto, para demonstrar que existe caos no sistema estudado é suficiente mostrar que $\Delta^\frac{1}{10} > 1$. 
+ 
+ A verificação da quantidade de caos foi feita listando os valores médios de $\Delta^\frac{1}{10}$ para matrizes iniciais que tiveram entre $0.01\%$ a $100\%$ de suas células modificadas, para ambos os tipos de vizinhanças.
 
 \chapter{Resultados e Análises}
 
