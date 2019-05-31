@@ -1,0 +1,43 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Associação Brasileira das Entidades dos Mercados Financeiro e de
+  Capitais 2018]{anbima3}
+\abntrefinfo{ANBIMA}{ANBIMA}{2018}
+{ASSOCIAçãO BRASILEIRA DAS ENTIDADES DOS MERCADOS FINANCEIRO E DE CAPITAIS.
+  \emph{Material de Estudos da Certificação CPA-10}: Conceitos básicos de
+  economia e finanças.
+São Paulo, SP, 2018. 49~p.}
+
+\bibitem[King 2008]{king}
+\abntrefinfo{King}{KING}{2008}
+{KING, K.~N. \emph{C Programming: A Modern Approach}. 2. ed. New York: W W
+  Norton and Company, 2008.}
+
+\bibitem[Kramer 2014]{klaus}
+\abntrefinfo{Kramer}{KRAMER}{2014}
+{KRAMER, K.
+\emph{Dinâmica de padrões em autômatos celulares com inércia}.
+Tese (Doutorado) --- Departamento de Física, Universidade Federal do Paraná,
+  Curitiba, Brasil, 2014.
+Dispon{\'\i}vel em: \url{https://acervodigital.ufpr.br/handle/1884/37425}.
+  Acesso em: 3 jul. 2011.}
+
+\bibitem[Lazzari 2018]{lazzari}
+\abntrefinfo{Lazzari}{LAZZARI}{2018}
+{LAZZARI, R. de.
+\emph{Estudo de um autômato celular para modelar ciclos de expansão e
+  contração}.
+Disserta\c{c}\~{a}o (Relatório de Pesquisa) --- Departamento de Física,
+  Universidade Federal do Paraná, 2018.}
+
+\bibitem[Weisbuch 2003]{stauffer}
+\abntrefinfo{Weisbuch}{WEISBUCH}{2003}
+{WEISBUCH, D.~S. G. Adjustment and social choice.
+\emph{Physica A}, v.~1, n.~323, p. 651--662, 2003.}
+
+\end{thebibliography}

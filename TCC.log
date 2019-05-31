@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  30 MAY 2019 21:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  31 MAY 2019 11:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,9 +1242,12 @@ l.358 A
 
 ] [9] [10
 
-] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lof) [11] [12
+] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.loq) [13] [14
+ [11]) [12] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.loq) [13
+
+] [14
 
 ] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lot) [15] [16
 
@@ -1258,14 +1261,14 @@ l.358 A
 
 ] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 34.
+(Font)              <14.4> on input line 36.
 
-Overfull \hbox (6.4481pt too wide) in paragraph at lines 42--42
+Overfull \hbox (6.4481pt too wide) in paragraph at lines 44--44
  [][] [][][]\T1/lmss/bx/n/12 NULLAM ELE-MEN-TUM URNA VEL IM-PER-DIET 
  []
 
 
-Overfull \hbox (1.3121pt too wide) in paragraph at lines 42--42
+Overfull \hbox (1.3121pt too wide) in paragraph at lines 44--44
  \T1/lmss/bx/n/12 SO-DA-LES ELIT IP-SUM PHA-RE-TRA LI-GULA AC 
  []
 
@@ -1279,21 +1282,12 @@ LaTeX Warning: Citation `britannica2' on page 23 undefined on input line 467.
 
 LaTeX Warning: Citation `britannica3' on page 23 undefined on input line 469.
 
-
-LaTeX Warning: Citation `stauffer' on page 23 undefined on input line 484.
-
 [23
 
 
 ]
-
-LaTeX Warning: Citation `stauffer' on page 24 undefined on input line 486.
-
-
-LaTeX Warning: Citation `klaus' on page 24 undefined on input line 490.
-
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 490.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
@@ -1303,47 +1297,27 @@ Package microtype Info: Loading generic settings for font family
  [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25] [26]
-
-LaTeX Warning: Citation `lazzari' on page 27 undefined on input line 528.
-
-
-LaTeX Warning: Citation `klaus' on page 27 undefined on input line 529.
-
-
-LaTeX Warning: Citation `stauffer' on page 27 undefined on input line 530.
-
-
-LaTeX Warning: Citation `king' on page 27 undefined on input line 532.
-
-[27
+ [25] [26] [27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 549--560
 
  []
 
-<matrizL100Ciclo0.png, id=256, 48.18pt x 48.18pt>
+<matrizL100Ciclo0.png, id=295, 48.18pt x 48.18pt>
 File: matrizL100Ciclo0.png Graphic file (type png)
  <use matrizL100Ciclo0.png>
 Package pdftex.def Info: matrizL100Ciclo0.png used on input line 565.
 (pdftex.def)             Requested size: 142.26378pt x 142.287pt.
 
-
-LaTeX Warning: Citation `stauffer' on page 28 undefined on input line 570.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28] <contamination.png, id=264, 198.7425pt x 198.7425pt>
+ [28] <contamination.png, id=305, 198.7425pt x 198.7425pt>
 File: contamination.png Graphic file (type png)
  <use contamination.png>
 Package pdftex.def Info: contamination.png used on input line 578.
 (pdftex.def)             Requested size: 142.26378pt x 142.26659pt.
- [29 </home/ly/Documents/TCC/LaTeX-TCC/matrizL100Ciclo0.png (PNG copy)>]
-Underfull \vbox (badness 1418) has occurred while \output is active []
-
- [30 </home/ly/Documents/TCC/LaTeX-TCC/contamination.png>] <ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png, id=282, 610.28pt x 343.2825pt>
+ [29 </home/ly/Documents/TCC/LaTeX-TCC/matrizL100Ciclo0.png (PNG copy)>] [30 </home/ly/Documents/TCC/LaTeX-TCC/contamination.png>] <ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png, id=323, 610.28pt x 343.2825pt>
 File: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png Graphic file (type png)
  <use ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png>
 Package pdftex.def Info: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png used on input line 612.
@@ -1351,12 +1325,12 @@ Package pdftex.def Info: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png used o
  [31 </home/ly/Documents/TCC/LaTeX-TCC/ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32] <seed156501936.png, id=294, 409.53pt x 409.53pt>
+ [32] <seed156501936.png, id=334, 409.53pt x 409.53pt>
 File: seed156501936.png Graphic file (type png)
  <use seed156501936.png>
 Package pdftex.def Info: seed156501936.png used on input line 719.
 (pdftex.def)             Requested size: 204.74861pt x 204.75198pt.
- <seed156501936thres.png, id=295, 409.53pt x 409.53pt>
+ <seed156501936thres.png, id=335, 409.53pt x 409.53pt>
 File: seed156501936thres.png Graphic file (type png)
  <use seed156501936thres.png>
 Package pdftex.def Info: seed156501936thres.png used on input line 723.
@@ -1365,99 +1339,148 @@ Package pdftex.def Info: seed156501936thres.png used on input line 723.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<seed263598624.png, id=296, 409.53pt x 409.53pt>
+<seed263598624.png, id=336, 409.53pt x 409.53pt>
 File: seed263598624.png Graphic file (type png)
  <use seed263598624.png>
 Package pdftex.def Info: seed263598624.png used on input line 732.
 (pdftex.def)             Requested size: 204.74861pt x 204.75198pt.
- <seed263598624thres.png, id=297, 409.53pt x 409.53pt>
+ <seed263598624thres.png, id=337, 409.53pt x 409.53pt>
 File: seed263598624thres.png Graphic file (type png)
  <use seed263598624thres.png>
 Package pdftex.def Info: seed263598624thres.png used on input line 736.
 (pdftex.def)             Requested size: 204.74861pt x 204.75198pt.
- [33] [34 </home/ly/Documents/TCC/LaTeX-TCC/seed156501936.png> </home/ly/Documents/TCC/LaTeX-TCC/seed156501936thres.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624thres.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 35 undefined on input line 777.
-
-[35
-
-] [36
+ [33] [34 </home/ly/Documents/TCC/LaTeX-TCC/seed156501936.png> </home/ly/Documents/TCC/LaTeX-TCC/seed156501936thres.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624thres.png (PNG copy)>] <ICA-L500-q0_200-seed1255341753-AvgStateAvgThresVsCycle.png, id=374, 610.28pt x 343.2825pt>
+File: ICA-L500-q0_200-seed1255341753-AvgStateAvgThresVsCycle.png Graphic file (type png)
+ <use ICA-L500-q0_200-seed1255341753-AvgStateAvgThresVsCycle.png>
+Package pdftex.def Info: ICA-L500-q0_200-seed1255341753-AvgStateAvgThresVsCycle.png used on input line 785.
+(pdftex.def)             Requested size: 304.84917pt x 171.48367pt.
+ <ICA-L500-q0_600-seed214482678-AvgStateAvgThresVsCycle.png, id=375, 610.28pt x 343.2825pt>
+File: ICA-L500-q0_600-seed214482678-AvgStateAvgThresVsCycle.png Graphic file (type png)
+ <use ICA-L500-q0_600-seed214482678-AvgStateAvgThresVsCycle.png>
+Package pdftex.def Info: ICA-L500-q0_600-seed214482678-AvgStateAvgThresVsCycle.png used on input line 787.
+(pdftex.def)             Requested size: 304.84917pt x 171.48367pt.
+ <ICA-L500-q1_0-seed561875194-AvgStateAvgThresVsCycle.png, id=376, 610.28pt x 343.2825pt>
+File: ICA-L500-q1_0-seed561875194-AvgStateAvgThresVsCycle.png Graphic file (type png)
+ <use ICA-L500-q1_0-seed561875194-AvgStateAvgThresVsCycle.png>
+Package pdftex.def Info: ICA-L500-q1_0-seed561875194-AvgStateAvgThresVsCycle.png used on input line 789.
+(pdftex.def)             Requested size: 304.84917pt x 171.48367pt.
+ <VonICA-L500-q0_200-seed479735081-AvgStateAvgThresVsCycle.png, id=377, 610.28pt x 343.2825pt>
+File: VonICA-L500-q0_200-seed479735081-AvgStateAvgThresVsCycle.png Graphic file (type png)
+ <use VonICA-L500-q0_200-seed479735081-AvgStateAvgThresVsCycle.png>
+Package pdftex.def Info: VonICA-L500-q0_200-seed479735081-AvgStateAvgThresVsCycle.png used on input line 796.
+(pdftex.def)             Requested size: 304.84917pt x 171.48367pt.
+ <VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png, id=378, 610.28pt x 343.2825pt>
+File: VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png Graphic file (type png)
+ <use VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png>
+Package pdftex.def Info: VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png used on input line 798.
+(pdftex.def)             Requested size: 304.84917pt x 171.48367pt.
+ <VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png, id=379, 610.28pt x 343.2825pt>
+File: VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png Graphic file (type png)
+ <use VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png>
+Package pdftex.def Info: VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png used on input line 800.
+(pdftex.def)             Requested size: 304.84917pt x 171.48367pt.
+ [35
 
 ]
+Overfull \vbox (4.951pt too high) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:afinidadeMedia' on page 37 undefined on input line 794.
+ [36 </home/ly/Documents/TCC/LaTeX-TCC/ICA-L500-q0_200-seed1255341753-AvgStateAvgThresVsCycle.png> </home/ly/Documents/TCC/LaTeX-TCC/ICA-L500-q0_600-seed214482678-AvgStateAvgThresVsCycle.png> </home/ly/Documents/TCC/LaTeX-TCC/ICA-L500-q1_0-seed561875194-AvgStateAvgThresVsCycle.png>] [37 </home/ly/Documents/TCC/LaTeX-TCC/VonICA-L500-q0_200-seed479735081-AvgStateAvgThresVsCycle.png> </home/ly/Documents/TCC/LaTeX-TCC/VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png> </home/ly/Documents/TCC/LaTeX-TCC/VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png>]
 
-No file TCC.bbl.
-[37] [38
+LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 38 undefined on input line 822.
+
+[38]
+
+LaTeX Warning: Reference `fig:afinidadeMedia' on page 39 undefined on input line 839.
+
+(/home/ly/Documents/TCC/LaTeX-TCC/TCC.bbl (/home/ly/Documents/TCC/LaTeX-TCC/TCC.brf)
+\tf@brf=\write5
+\openout5 = `TCC.brf'.
+
+ [39
+
+] [40
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 826.
+(hyperref)                removing `\uppercase' on input line 3.
 
-[39
-
-] [40] [41
-
-] [42
-
-] [43] [44
+bibitemlist
+) [41] [42
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 854.
+(hyperref)                removing `\uppercase' on input line 871.
 
-[45
+[43
 
-] [46] [47
+] [44] [45
 
-] [48
+] [46
 
-] [49] [50
+] [47] [48
 
-] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.ind [51] [52
+]
 
-] [53
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 899.
+
+[49
+
+] [50] [51
+
+] [52
+
+] [53] [54
+
+] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.ind [55] [56
+
+] [57
 
 
 ])
-\tf@lof=\write5
-\openout5 = `TCC.lof'.
+\tf@lof=\write6
+\openout6 = `TCC.lof'.
 
-\tf@loq=\write6
-\openout6 = `TCC.loq'.
+\tf@loq=\write7
+\openout7 = `TCC.loq'.
 
-\tf@lot=\write7
-\openout7 = `TCC.lot'.
+\tf@lot=\write8
+\openout8 = `TCC.lot'.
 
-\tf@toc=\write8
-\openout8 = `TCC.toc'.
+\tf@toc=\write9
+\openout9 = `TCC.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 882.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 882.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 927.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 927.
  (/home/ly/Documents/TCC/LaTeX-TCC/TCC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 882.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 882.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 927.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 927.
+Package rerunfilecheck Info: File `TCC.brf' has not changed.
+(rerunfilecheck)             Checksum: BE67ED66AB126974CD929B38BAACE284;676.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 882.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 927.
  ) 
 Here is how much of TeX's memory you used:
- 16343 strings out of 493029
- 242789 string characters out of 6136233
- 511426 words of memory out of 5000000
- 19307 multiletter control sequences out of 15000+600000
- 99223 words of font info for 159 fonts, out of 8000000 for 9000
+ 16488 strings out of 493029
+ 246166 string characters out of 6136233
+ 515557 words of memory out of 5000000
+ 19399 multiletter control sequences out of 15000+600000
+ 103365 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,13n,50p,1965b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (55 pages, 461149 bytes).
+ 47i,12n,50p,1965b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (59 pages, 749080 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 519 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
- 33068 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 715 PDF objects out of 1000 (max. 8388607)
+ 612 compressed objects within 7 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 33618 words of extra memory for PDF output out of 35830 (max. 10000000)
 

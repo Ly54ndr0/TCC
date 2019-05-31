@@ -759,6 +759,51 @@ Considerando que computadores geram números aleatórios a partir de uma \textit
 
 \section{A interpretação por Volatilidade}
 
+Diferentemente de \citeonline{stauffer}, que utilizou o \textit{Inhomogenous Cellular Automata} visando relações com o mercado financeiro, nós fizemos uma interpretação baseada na definição de \citeonline{anbima3}:
+\begin{citacao}
+  Em finanças, chamamos de \index{volatilidade}\textbf{volatilidade} o grau de variação dos preços de um ativo em
+um determinado período de tempo, medido pelo conceito estatístico de desvio-padrão dos
+retornos logarítmicos.Em finanças, chamamos de volatilidade o grau de variação dos preços de um ativo em
+um determinado período de tempo, medido pelo conceito estatístico de desvio-padrão dos
+retornos logarítmicos. \cite{anbima3}
+\end{citacao}
+
+No InCa, a velocidade máxima com que cada célula consegue mudar de estado é determinada, através do limiar interno a ela, pelo ajuste máximo de limiar $q$. Se redefinirmos $q$ como sendo sendo um indicador global de volatilidade, o estado de cada célula como \texttt{+1}=comprando e \texttt{-1}=vendendo, e o limiar de cada célula como o valor que cada célula dá ao ``produto'' do nosso sistema, então podemos entender as células como agentes em um mercado financeiro e, se essas hipóteses estiverem corretas, esse modelo será capaz de imitar fenômenos observados na economia.
+
+Antes de exibirmos os dados, consideremos o que acontece no mercado em função da volatilidade, segundo \citeonline{anbima3}:
+\begin{citacao}
+ {}[\dots] Uma medida do risco
+associado ao investimento em um ativo é justamente o grau de variação do seu preço de
+mercado. Comparando dois investimentos com o mesmo retorno esperado, faz mais sentido
+escolher aquele que oferece a menor variabilidade em seu preço, ou seja, aquele que sujeita o
+seu detentor a uma menor dispersão entre os preços observados ao longo do tempo. \cite{anbima3}
+\end{citacao}
+Portanto, assumindo que o preço está diretamente relacionado ao valor do produto, devemos observar variações mais rápidas no limiar médio do sistema (valor médio) quando o ajuste máximo de limiar (volatilidade) for maior em relação a uma outra simulação com volatilidade menor. E de fato, é isso o que acontece nas simulações, como está demonstrado nas Figuras \ref{fig:volatilidadeMoore}a-c para a vizinhança de Moore e nas Figuras \ref{fig:volatilidadeVonNeumann}a-c para a vizinhança de VonNeumann.
+
+\begin{figure}
+  \centering
+  \subfloat[Com volatilidade igual a 0.2, são observados aproximadamente 3.5 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{ICA-L500-q0_200-seed1255341753-AvgStateAvgThresVsCycle.png}}
+
+  \subfloat[9.5 comprimentos de onda são observados para volatilidade=0.6.]{\includegraphics[width=0.67\textwidth]{ICA-L500-q0_600-seed214482678-AvgStateAvgThresVsCycle.png}}
+  
+  \subfloat[A volatilidade 1 apresenta mais de 12 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{ICA-L500-q1_0-seed561875194-AvgStateAvgThresVsCycle.png}}
+  \caption{Gráficos dos valores médios (\textit{Average value}) do estado médio (\textit{Average State}) e do Limiar Médio (\textit{Average Threshold}) em função do ciclo de simulação. Interpretando o limiar médio como o valor médio de um produto e o estado médio como comprando (positivo) ou vendendo (negativo), percebe-se que quanto maior a volatilidade (q), mais comprimentos de onda são observados no mesmo intervalo de ciclos para o valor médio. É notável como o valor (limiar) continua alto mesmo após as células começarem a vender (estado médio caindo).}
+  \label{fig:volatilidadeMoore}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \subfloat[Volatilidade 0.2 e aproximadamente 8 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{VonICA-L500-q0_200-seed479735081-AvgStateAvgThresVsCycle.png}}
+
+  \subfloat[Volatilidade 0.6 e aproximadamente 19 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png}}
+  
+  \subfloat[Volatilidade 1 e aproximadamente 28 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png}}
+  \caption{Gráficos dos valores médios do estado médio (\textit{Average State}) e do Limiar Médio (\textit{Average Threshold}) em função do ciclo (\textit{Cycle}) de uma simulação com vizinhança de VonNeumann. Novamente percebe-se que, quanto maior a volatilidade (q), mais comprimentos de onda são observados no mesmo intervalo de ciclos para o valor (limiar) médio. Essas oscilações são em maior número do que as observadas para a vizinhança de Moore. Igualmente nota-se que o valor (limiar) continua alto mesmo após as células (agentes) começarem a vender. }
+  \label{fig:volatilidadeVonNeumann}
+\end{figure}
+
+Dessa análise foi percebido que, quanto menos vizinhos cada célula tem, mais rápido o sistema oscila, independentemente do valor do ajuste máximo de limiar $q$. Interpretando novamente para o mercado financeiro entenderíamos que quanto menos contatos um agente econômico tem, mais rápido o sistema econômico oscila. Equivalentemente, se os agentes econômicos têm mais contatos, o sistema oscila mais lentamente. Interpretamos essa descoberta assim: quanto mais contatos um agente econômico tem, mais ele será influenciado, tornando suas decisões mais parecidas com as dos seus agentes próximos e assim tornando as mudanças de opinião mais lentas.
+
 \section{A análise da Afinidade}
 Como explicado na seção de metodologia, foi constatado que o número de aglomerados e o estado médio tendem a estar relacionados linearmente, e para estudar esse fenômeno foi definido o conceito de Afinidade, sendo realizadas várias simulações.
 
@@ -802,7 +847,7 @@ Os próximos passos incluem estudar o motivo da existência do máximo no gráfi
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-\bibliography{abntex2-modelo-references}
+\bibliography{referencias}
 
 % ----------------------------------------------------------
 % Glossário
