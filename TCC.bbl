@@ -7,11 +7,42 @@
 
 \bibitem[Associação Brasileira das Entidades dos Mercados Financeiro e de
   Capitais 2018]{anbima3}
-\abntrefinfo{ANBIMA}{ANBIMA}{2018}
+\abntrefinfo{ANBIMA}{ANBIMA}{2018a}
 {ASSOCIAçãO BRASILEIRA DAS ENTIDADES DOS MERCADOS FINANCEIRO E DE CAPITAIS.
   \emph{Material de Estudos da Certificação CPA-10}: Conceitos básicos de
   economia e finanças.
 São Paulo, SP, 2018. 49~p.}
+
+\bibitem[Associação Brasileira das Entidades dos Mercados Financeiro e de
+  Capitais 2018]{anbima4}
+\abntrefinfo{ANBIMA}{ANBIMA}{2018b}
+{ASSOCIAçãO BRASILEIRA DAS ENTIDADES DOS MERCADOS FINANCEIRO E DE CAPITAIS.
+  \emph{Material de Estudos da Certificação CPA-10}: Princípios de
+  investimento.
+São Paulo, SP, 2018. 63~p.}
+
+\bibitem[Bluman 2014]{statistics}
+\abntrefinfo{Bluman}{BLUMAN}{2014}
+{BLUMAN, A.~G. \emph{Elementary Statistics: a step by step approach}. 9. ed.
+  Rio de Janeiro: McGraw-Hill Education, 2014.}
+
+\bibitem[Britannica]{britannica2}
+\abntrefinfo{Britannica}{BRITANNICA}{a}
+{BRITANNICA, E. \emph{Automata theory}. Publicação Online.
+Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/automaton}.
+  Acesso em: 14 de Dezembro de 2018.}
+
+\bibitem[Britannica]{britannica1}
+\abntrefinfo{Britannica}{BRITANNICA}{b}
+{BRITANNICA, E. \emph{Automaton}. Publicação Online.
+Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/automaton}.
+  Acesso em: 14 de Dezembro de 2018.}
+
+\bibitem[Britannica]{britannica3}
+\abntrefinfo{Britannica}{BRITANNICA}{c}
+{BRITANNICA, E. \emph{Cellular automata}. Publicação Online.
+Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/automaton}.
+  Acesso em: 14 de Dezembro de 2018.}
 
 \bibitem[King 2008]{king}
 \abntrefinfo{King}{KING}{2008}
@@ -39,5 +70,17 @@ Disserta\c{c}\~{a}o (Relatório de Pesquisa) --- Departamento de Física,
 \abntrefinfo{Weisbuch}{WEISBUCH}{2003}
 {WEISBUCH, D.~S. G. Adjustment and social choice.
 \emph{Physica A}, v.~1, n.~323, p. 651--662, 2003.}
+
+\bibitem[Wilensky Junho de 2018]{netlogo}
+\abntrefinfo{Wilensky}{WILENSKY}{Junho de 2018}
+{WILENSKY. \emph{NetLogo 6.0.4}. Junho de 2018. Publicação Online.
+Dispon{\'\i}vel em: \url{https://ccl.northwestern.edu}. Acesso em: Julho de
+  2018.}
+
+\bibitem[Wolfram 2018]{wolfram}
+\abntrefinfo{Wolfram}{WOLFRAM}{2018}
+{WOLFRAM, S. \emph{A new kind of Science, Online}. 2018. Publicação Online.
+Dispon{\'\i}vel em: \url{www.wolframscience.com/nks/}. Acesso em: 14 de
+  Dezembro de 2018.}
 
 \end{thebibliography}

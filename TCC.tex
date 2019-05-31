@@ -248,9 +248,14 @@
 	\imprimirdata.}\\
 	
 	\hspace{0.5cm}
-		1. Palavra-chave1.
-		2. Palavra-chave2.
-		2. Palavra-chave3.
+		1. Autômato Celular.
+		2. Aglomeração.
+    2. Liquidez.
+    3. Volatilidade.
+    4. Estocasticidade.
+    5. Modelagem.
+    6. Econofísica.
+    7. Caos.
 		I. Marlus Koehler.
 		II. Universidade Federal do Paraná.
 		III. Departamento de Física.
@@ -363,15 +368,15 @@ Agradeço ao meu Orientador Marlus Koehler pela liberdade e pela confiança no m
 % ---
 % Epígrafe
 % ---
-\begin{epigrafe}
-    \vspace*{\fill}
-	\begin{flushright}
-		\textit{``Texto\\
-		Tente outra vez\\
-		''\\
-		(Livro das Virtudes para Crianças)}
-	\end{flushright}
-\end{epigrafe}
+%\begin{epigrafe}
+%    \vspace*{\fill}
+%	\begin{flushright}
+%		\textit{``Texto\\
+%		Tente outra vez\\
+%		''\\
+%		(Livro das Virtudes para Crianças)}
+%	\end{flushright}
+%\end{epigrafe}
 % ---
 
 % ---
@@ -383,18 +388,18 @@ Agradeço ao meu Orientador Marlus Koehler pela liberdade e pela confiança no m
 \begin{resumo}
   Utilizando um autômato celular bidimensional desenvolvido por Dietrich Stauffer e Gérard Weisbuch em 2002 para simulações de agentes em estado de compra ou venda em um sistema, determinamos a intensidade com que esses agentes tendem a tomar decisões em conjunto, denominada afinidade. Isso foi feito considerando vizinhanças de Moore e Von Neumann. Desenvolvemos duas interpretações para a variável que determina a velocidade do sistema: liquidez, e volatilidade. Essas simulações foram feitas para números diferentes de agentes, variando de 2500 a 250000. Descobrimos, nessa análise positiva, que a afinidade é uma função sigmóide da liquidez, variando com o número de agentes. Com base nesses dados percebemos que, para sistemas com alta liquidez, como o mercado de alimentos na vida real, a tendência de aglomeração de agentes é alta, o que pode explicar a existência das Centrais de Abastecimento CEASA. Analogamente, quando a liquidez é baixa, como no caso das negociações envolvendo itens de colecionador e figurinhas de copa do mundo, a tendência de aglomeração é menor, fazendo com que existam mais aglomerados esparsamente distribuídos, como grupos de troca de figurinhas em várias praças de uma mesma cidade. Com a análise de volatilidade foi percebido um comportamento semelhante ao de mercados financeiros, sendo a oscilação do preço do produto defasada em relação à oscilação do número de compradores. Aproveitando a forma com que computadores geram números aleatórios também foi possível verificar se os autômatos celulares estudados apresentavam comportamento caótico. Colateralmente foi desenvolvido um algoritmo de contagem de aglomerados para autômatos celulares em duas dimensões que se mostrou mais eficiente do que os utilizados atualmente ao considerar um algoritmo semelhante ao processo de contaminação celular.
 
- \textbf{Palavras-chave}: Autômato celular. Aglomeração. Análise positiva. Liquidez. Volatilidade. Estocasticidade. Modelagem. Econofísica. Microeconomia. Caos.
+ \textbf{Palavras-chave}: Autômato celular. Aglomeração. Liquidez. Volatilidade. Estocasticidade. Modelagem. Econofísica. Caos.
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
  \begin{otherlanguage*}{english}
-   This is the english abstract.
+   Using a bidimensional cellular automata developed by Dietrich Stauffer and Gérard Weisbuch in 2002 to run simulations of agents in states of buying and selling in a system, we determined the intensity with which those agents make decision in groups, and we named it affinity. That was done considering Moore's and VonNeumann's neighboorhoods. We developed two interpretations for the variable responsible for determining the velocity of the system: liquidity and volatility. The simulations were done with different numbers of agents, varying from 2500 to 250000. We discovered, in this positive analysis, that the affinity is a sigmoid function of the liquidity, changing with the number of agents in the system. Based on the data obtained we noticed that, for systems with high liquidity, as the foods market, the tendency for agents to form clusters is high, what could explain Supply Centrals like the CEASAs found in Brazil. Similarly, when the liquidity is low, as the collectors items, the tendency for the agents to make clusters is smaller, making smaller dispersed clusters. With the analysis of volatility we noticed a behavior alike to the stock market, having a buying cycle desynchronized to the price cycle. Seizing the way computers generate random numbers, it was also possible to verify if the cellular automata studied were chaotic. As an additional feature, we developed an algorithm for counting clusters in two dimentions matrixes that was demonstrated to be faster than other similar algorithms.
 
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Keywords}: latex. abntex. text editoration.
+   \textbf{Keywords}: Cellular automata. Clustering. Liquidity. Volatility. Stochasticity. Modeling. Econophysics. Chaos.
  \end{otherlanguage*}
 \end{resumo}
 % ---
@@ -410,9 +415,9 @@ Agradeço ao meu Orientador Marlus Koehler pela liberdade e pela confiança no m
 % ---
 % inserir lista de quadros
 % ---
-\pdfbookmark[0]{\listofquadrosname}{loq}
-\listofquadros*
-\cleardoublepage
+%\pdfbookmark[0]{\listofquadrosname}{loq}
+%\listofquadros*
+%\cleardoublepage
 % ---
 
 % ---
@@ -464,13 +469,13 @@ Agradeço ao meu Orientador Marlus Koehler pela liberdade e pela confiança no m
 \chapter{Introdução}
 % ----------------------------------------------------------
 
-Autômatos são objetos que operam a si mesmos. Essa definição, disponível na Encyclopaedia Britannica (Referências \cite{britannica1} e \cite{britannica2}), traz a possibilidade de objetos de uso cotidiano, como o computador e o celular, se encaixarem na categoria de autômatos. Porém, a existência desses objetos não é nova, existindo autômatos desde a Grécia antiga na figura de um modelo de madeira de um pombo construído por Archytas de Tarentum. Utilizações contemporâneas de autômatos incluem as redes neurais e as inteligências artificiais. Também existem outros tipos famosos de autômatos, como os autômatos celulares.
+Autômatos são objetos que operam a si mesmos. Essa definição, disponível na Encyclopaedia Britannica (Referências \cite{britannica1} e \cite{britannica2}), traz a possibilidade de objetos de uso cotidiano, como o computador e o celular, se encaixarem na categoria de autômatos. Porém, a existência desses objetos não é nova, existindo autômatos desde a Grécia antiga na figura de um modelo de madeira de um pombo construído por Archytas de Tarentum \cite{britannica1}. Utilizações contemporâneas de autômatos incluem as redes neurais e as inteligências artificiais. Também existem outros tipos famosos de autômatos, como os autômatos celulares.
 
-Os autômatos celulares são, segundo a Encyclopaedia Britannica (referência \cite{britannica3}), simples modelos espacialmente distribuídos capazes de simular processos do mundo real. Eles foram inventados por John von Neumann e Stanislaw Ulam no Laboratório Nacional de Los Alamos em 1940 e ficaram famosos através do ``Game of Life'', inventado por John Conway em 1970, que simula a dinâmica de vida, morte e população.
+Os autômatos celulares são, segundo \citeonline{britannica3}, simples modelos espacialmente distribuídos capazes de simular processos do mundo real. Eles foram inventados por John von Neumann e Stanislaw Ulam no Laboratório Nacional de Los Alamos em 1940 e ficaram famosos através do ``Game of Life'', inventado por John Conway em 1970, que simula a dinâmica de vida, morte e população.
 
 \section*{A nova ciência de Stephen Wolfram}
 
-No livro \textit{A New Kind Of Science}, o autor Stephen Wolfram determinou alguns axiomas sobre os autômatos, que basicamente são os seguintes:
+No livro \textit{A New Kind Of Science}, o autor Stephen Wolfram \cite{wolfram} determinou alguns axiomas sobre os autômatos, que basicamente são os seguintes:
 \begin{enumerate}
 	\item É possível criar sistemas complexos a partir de regras simples.
 	\item Princípio da equivalência computacional: para todo comportamento que não é obviamente simples  existe uma computação correspondente equivalentemente sofisticada.
@@ -481,20 +486,20 @@ Este último axioma é o que causou Stephen a desenvolver a teoria de autômatos
 
 \section*{O autômato estocástico de Stauffer}
 
-Em 2003, Dietrich Stauffer (Referência \cite{stauffer}) publicou um artigo no qual ele descreveu um autômato celular não-homogêneo (chamado por ele de InCA ou Inhomogeneous Cellullar Automata) no qual a atualização das células ocorria de forma aleatória e cada célula tinha uma espécie de resistência interna a mudar de estado. Formalmente, em uma matriz, cada célula do autômato de Stauffer guarda dois números: o próprio estado e o próprio limiar. O limiar é definido como sendo o menor valor da soma dos estados das células vizinhas necessário para que a célula fique no estado $+1$ caso ela seja atualizada. Esse número pode ser positivo ou negativo. Caso a célula seja atualizada mas ela não tenha um número de vizinhos no estado $+1$ suficiente para ficar no estado $+1$, a célula fica no estado $-1$ e seu limiar diminui por um número aleatório entre $0$ e $q$, onde $q$ é o ajuste máximo de limiar, definido antes do início da simulação. Caso a célula fique no estado $+1$ ao ser atualizada, o seu limiar aumenta por um número aleatório entre $0$ e $q$.
+Em 2003, \citeonline{stauffer} publicou um artigo no qual ele descreveu um autômato celular não-homogêneo (chamado por ele de InCA ou Inhomogeneous Cellullar Automata) no qual a atualização das células ocorria de forma aleatória e cada célula tinha uma espécie de resistência interna a mudar de estado. Formalmente, em uma matriz, cada célula do autômato de Stauffer guarda dois números: o próprio estado e o próprio limiar. O limiar é definido como sendo o menor valor da soma dos estados das células vizinhas necessário para que a célula fique no estado $+1$ caso ela seja atualizada. Esse número pode ser positivo ou negativo. Caso a célula seja atualizada mas ela não tenha um número de vizinhos no estado $+1$ suficiente para ficar no estado $+1$, a célula fica no estado $-1$ e seu limiar diminui por um número aleatório entre $0$ e $q$, onde $q$ é o ajuste máximo de limiar, definido antes do início da simulação. Caso a célula fique no estado $+1$ ao ser atualizada, o seu limiar aumenta por um número aleatório entre $0$ e $q$.
 
-Em seu artigo ``Adjustment and social choice'' (Referência \cite{stauffer}), Stauffer explorou o comportamento das oscilações do estado médio e do limiar médio da matriz em função do tempo de simulação. Nisso ele percebeu que, quanto maior o valor do ajuste máximo de limiar $q$, maior é a frequência dessas oscilações em função do tempo. Além de comentar sobre a possibilidade de aplicação em Física de Transição de Fases, Stauffer utilizou os resultados obtidos para propor previsões e modelos para mercados financeiros.
+Em seu artigo ``Adjustment and social choice'', \citeonline{stauffer} explorou o comportamento das oscilações do estado médio e do limiar médio da matriz em função do tempo de simulação. Nisso ele percebeu que, quanto maior o valor do ajuste máximo de limiar $q$, maior é a frequência dessas oscilações em função do tempo. Além de comentar sobre a possibilidade de aplicação em Física de Transição de Fases, Stauffer utilizou os resultados obtidos para propor previsões e modelos para mercados financeiros.
 
 \section*{A dinâmica de padrões de Klaus Kramer}
 
-Já em 2014, Klaus Kramer (Referência \cite{klaus}) desenvolveu estudos sobre autômatos celulares envolvendo três estados e focou na formação de aglomerados. O autômato celular dele funciona, de forma sintética, assim: O Autômato Celular tem três possíveis estados para cada célula (\texttt{-1}, \texttt{0} e \texttt{+1}); as células estão organizadas em uma malha quadrada; as oito celulas adjacentes formam a vizinhança de cada célula; a matriz de células é finita; células nas bordas interagem somente com as células nas bordas ou no interior da matriz; cada célula tem uma resistência à mudança (ou inércia) cujo valor fica entre $0$ e $8$, sendo $0$ equivalente a nenhuma resistência e $8$ equivalente a resistência total; existe uma chance de cada célula que tem uma vizinha no estado $0$ ser convertida para o estado $0$; ao ser atualizada, se a a célula tiver uma inércia maior que o valor absoluto da soma dos estados das células na vizinhança dela, a célula continua no mesmo estado; caso o valor da inércia da célula seja menor que o valor absoluto da soma da vizinhança, a célula muda para o estado \texttt{-1} ou \texttt{+1} dependendo se a soma é menor ou maior que $0$, respectivamente; se o valor da soma for zero, a célula continua no mesmo estado. Esse processo era repetido até que uma configuração estácionária fosse alcançada. Uma configuração era considerada estacionária se a média dos estados das últimas dez gerações estivesse dentro de $0.001\%$ da média dos estados dessa configuração.
+Já em 2014, \citeonline{klaus} desenvolveu estudos sobre autômatos celulares envolvendo três estados e focou na formação de aglomerados. O autômato celular dele funciona, de forma sintética, assim: O Autômato Celular tem três possíveis estados para cada célula (\texttt{-1}, \texttt{0} e \texttt{+1}); as células estão organizadas em uma malha quadrada; as oito celulas adjacentes formam a vizinhança de cada célula; a matriz de células é finita; células nas bordas interagem somente com as células nas bordas ou no interior da matriz; cada célula tem uma resistência à mudança (ou inércia) cujo valor fica entre $0$ e $8$, sendo $0$ equivalente a nenhuma resistência e $8$ equivalente a resistência total; existe uma chance de cada célula que tem uma vizinha no estado $0$ ser convertida para o estado $0$; ao ser atualizada, se a a célula tiver uma inércia maior que o valor absoluto da soma dos estados das células na vizinhança dela, a célula continua no mesmo estado; caso o valor da inércia da célula seja menor que o valor absoluto da soma da vizinhança, a célula muda para o estado \texttt{-1} ou \texttt{+1} dependendo se a soma é menor ou maior que $0$, respectivamente; se o valor da soma for zero, a célula continua no mesmo estado. Esse processo era repetido até que uma configuração estácionária fosse alcançada. Uma configuração era considerada estacionária se a média dos estados das últimas dez gerações estivesse dentro de $0.001\%$ da média dos estados dessa configuração.
 
 Durante a análise, o valor da inércia foi igual para todas as células e não mudou durante as simulações. Os seguintes parâmetros foram utilizados: a densidade de cada estado, o tamanho médio dos aglomerados, o número de aglomerados, e o tempo de convergência para uma disposição estacionária. As matrizes iniciais foram criada parcialmente de forma aleatória, sendo que a densidade do estado \texttt{0} foi forçada para um valor pré-definido e o estado \texttt{+1} foi forçado a ser o dominante. O espaço de amostra para as simulações foi escolhido pelo autor: os conjuntos de dados escolhidos tinham uma matriz inicial com tamanho médio de aglomerados entre $2.4$ e $2.8$. Isso foi feito porque ``os valores resultaram numa melhor distribuição dos dados iniciais sobre o espaço de parâmetros''.
 
 Aglomerados foram considerados como sendo formados por duas ou mais células adjacentes ortogonalmente no mesmo estado. 
 Para a contagem dos aglomerados foi utilizado o algoritmo de Hoshen-Kopelman, que consiste em encontrar aglomerados, etiquetar os aglomerados encontrados, procurar aglomerados adjacentes, realizar a união desses aglomerados, e iterar os dois últimos passos até que não existam mais aglomerados adjacentes. A contagem de aglomerados foi implementada com o objetivo de estudar qualitativamente a evolução da distribuição espacial dos estados do sistema.
 
-Foi observado, para todos os valores de inércia, que a densidade de células positivas aumentou até o estado estacionário. A relação entre densidade inicial de células positivas e densidade final de células positivas ficou localmente linear no intervalo $[0.33, 0.36]$, sendo que \textbf{densidades maiores de células no estado positivo resultaram na diminuição de aglomerados positivos.}
+Foi observado, para todos os valores de inércia, que a densidade de células positivas aumentou até o estado estacionário. A relação entre densidade inicial de células positivas e densidade final de células positivas ficou localmente linear no intervalo $[0.33, 0.36]$, sendo que densidades maiores de células no estado positivo resultaram na diminuição de aglomerados positivos.
 
 Também foi estudado, para larguras de matriz iguais a $20$ $40$ $60$ $100$ e $200$ células, qual a influência do tamanho da matriz sobre a dinâmica do sistema. Foi concluído que a densidade final de células no estado \texttt{+1} independe do tamanho do sistema.
 
@@ -506,11 +511,16 @@ Finalmente, no estudo de ecótonos (região de sobrevivência de um estado/bioma
 
 
 \subsection*{Objetivo geral:}
-Explorar a dinâmica de estados do autômato celular de Stauffer, juntando a ele a ideia de estudar aglomerados empreendida por Kramer, a fim de buscar padrões que possam ser associados a fenômenos naturais.
+Explorar a dinâmica de estados do autômato celular de \citeonline{stauffer}, juntando a ele a ideia de estudar aglomerados empreendida por \citeonline{klaus}, a fim de buscar padrões que possam ser associados a fenômenos naturais.
 
 \subsection*{Objetivos específicos:}
 \begin{enumerate}
-  \item O1
+  \item Desenvolver um autômato celular capaz de executar simulações semelhantes às desenvolvidas por \citeonline{stauffer};
+  \item Implementar um algoritmo de contagem de aglomerados no autôato celular, como fez \citeonline{klaus};
+  \item Desenvolver simulações para vizinhanças de VonNeumann e de Moore;
+  \item Criar interpretações para os dados obtidos;
+  \item Buscar padrões recorrente e modelar relações com base neles;
+  \item Buscar padrões de caos nos dados obtidos.
 \end{enumerate}
 
 % ----------------------------------------------------------
@@ -525,11 +535,11 @@ Explorar a dinâmica de estados do autômato celular de Stauffer, juntando a ele
 
 O primeiro passo para este estudo foi conhecer a produção científica sobre autômatos celulares na área da Física. Para isso foram lidos alguns artigos, incluindo:
 \begin{enumerate}
-    \item Rodrigo de Lazzari: “Estudo De Um Autômato Celular Para Modelar Ciclos De Expansão E Contração (“Boom E Burst”)” (Referência \cite{lazzari});
-    \item Klaus Kramer: “Dinâmica de padrões em autômatos celulares com inércia” (Referência \cite{klaus});
-    \item Gérard Weisbuch, Dietrich Stauffer: “Adjustment and social choice” (Referência \cite{stauffer});
+    \item \citeonline{lazzari}: “Estudo De Um Autômato Celular Para Modelar Ciclos De Expansão E Contração (“Boom E Burst”)”;
+    \item \citeonline{klaus}: “Dinâmica de padrões em autômatos celulares com inércia”;
+    \item \citeonline{stauffer}: “Adjustment and social choice”;
 \end{enumerate}
-Também foram verificadas implementações de autômatos celulares  com o software de simulações científicas Netlogo. Ainda foi feita a leitura de alguns artigos sobre estatística e correlação para auxiliar na interpretação dos dados gerados pelas simulações. Adicionalmente, com o objetivo de obter conhecimento para criar implementações de autômatos celulares na linguagem de programação C, foram  lidos 19 capítulos do livro “C programming: A modern approach, 2nd Edition” do autor K.N. King (Referência \cite{king}).
+Também foram verificadas implementações de autômatos celulares  com o software de simulações científicas Netlogo \cite{netlogo}. Ainda foi feita a leitura de alguns artigos sobre estatística \cite{statistics} e correlação para auxiliar na interpretação dos dados gerados pelas simulações. Adicionalmente, com o objetivo de obter conhecimento para criar implementações de autômatos celulares na linguagem de programação C, foram  lidos 19 capítulos do livro “C programming: A modern approach, 2nd Edition” do autor K.N. King \cite{king}.
     
 \section{Modelagem e implementação de autômatos}
 
@@ -546,7 +556,7 @@ A seguinte lista de características de autômatos celulares foi produzida com b
 \underline{Superposição de estados:} se é possível que cada célula tenha mais de um estado ao mesmo tempo.\\
 \underline{Propriedades intrínsecas a cada célula:} características únicas a cada célula, além do estado.
 
-O autômato celular não-homogêneo (InCA) de Stauffer foi modelado utilizando as características acima, resultando na descrição abaixo:\\
+O autômato celular não-homogêneo (InCA) de \citeonline{stauffer} foi modelado utilizando as características acima, resultando na descrição abaixo:\\
 \underline{Número de estados:} Dois estados, -1 e 1.\\
 \underline{Competitividade ou simbiose entre estados:} competitividade.\\
 \underline{Topologia do espaço:} quadrada de tamanho $L\times L$, onde $L$ é a \textit{largura da matriz} em unidades de números de células, com bordas fechadas. Células conectadas verticalmente e horizontalmente por vizinhança mais próxima, mas não diagonalmente..\\
@@ -563,11 +573,11 @@ Em seguida, esse modelo de autômatos celular foi implementado na linguagem C. P
 \begin{figure}
     \centering
     \includegraphics[width=5cm]{matrizL100Ciclo0.png}
-    \caption{Representação gráfica da matriz de estados iniciais de uma simulação com $L=100$. Células pretas representam o estado $-1$ e células brancas representam o estado $+1$. A matriz de estados iniciais é gerada de forma aleatória, com semente baseada no horário de execução da simulação.}
+    \caption{Representação gráfica da matriz de estados iniciais de uma simulação com $L=100$. Células pretas representam o estado $+1$ e células brancas representam o estado $-1$. A matriz de estados iniciais é gerada de forma aleatória, com semente baseada no horário de execução da simulação.}
     \label{fig:matrizL100Ciclo0}
 \end{figure}
 
-A implementação do InCA foi planejada para imprimir várias informações sobre a situação da matriz: Ciclo, Estado Médio da matriz, Limiar Médio da matriz, e Número de Aglomerados. Um \textit{Ciclo} foi definido como sendo igual a $L\times L$ atualizações aleatórias de células na matriz, já que esse seria o número de atualizações de células caso o sistema fosse determinístico. Diferentemente de \cite{stauffer}, que executou as simulações somente para vizinhanças de VonNeumann (as 4 células ortogonais à célula central, nas posições norte, sul, leste e oeste), nós também fizemos as simulações para vizinhanças de Moore, que considera as 8 células vizinhas de uma célula central.
+A implementação do InCA foi planejada para imprimir várias informações sobre a situação da matriz: Ciclo, Estado Médio da matriz, Limiar Médio da matriz, e Número de Aglomerados. Um \textit{Ciclo} foi definido como sendo igual a $L\times L$ atualizações aleatórias de células na matriz, já que esse seria o número de atualizações de células caso o sistema fosse determinístico. Diferentemente de \citeonline{stauffer}, que executou as simulações somente para vizinhanças de VonNeumann (as 4 células ortogonais à célula central, nas posições norte, sul, leste e oeste), nós também fizemos as simulações para vizinhanças de Moore, que considera as 8 células vizinhas de uma célula central.
 
 \section{O algoritmo de contagem de aglomerados}
 
@@ -594,7 +604,7 @@ O grande diferencial desta implementação do InCA, em relação ao estudo de St
 
 O leitor com experiência em conjuntos perceberá que o conjunto de células contaminadas no passo $n$ é dado por $\overline{C_{n-1}}-C_{n-1}=C_n-C_{n-1}$ e que quando $C_{n-1}=\overline{C_{n-1}}=C_n$ teremos que o conjunto de células contaminadas é $C_n-C_{n-1}=C_n-C_n=\emptyset$. Portanto, a condição de término do processo de contaminação é equivalente ao momento em que não existem mais células a serem contaminadas.
 
-Este algoritmo tem complexidade $O(N)$ (vide REFERÊNCIA ALGORITHMS MANUAL), onde $N$ é o número total de células na matriz. Isso pode ser facilmente verificado, considerando que cada célula $c$ será verificada no máximo $v(c)+1$, onde $v$ é uma função que retorna o número de células de uma dada célula. Para vizinhanças de VonNeumann, esse número é $5$ e para vizinhanças de Moore esse número é $9$, ambas em duas dimensões. Esse é um avanço considerável em comparação com o algoritmo de  Hoshen-Kopelman que, por análise prória do autor deste trabalho, demonstrou ter complexidade $O(N^2)$.
+Este algoritmo tem complexidade $O(N)$ (notação \textit{Big O}), onde $N$ é o número total de células na matriz. Isso pode ser facilmente verificado, considerando que cada célula $c$ será verificada no máximo $v(c)+1$, onde $v$ é uma função que retorna o número de células de uma dada célula. Para vizinhanças de VonNeumann, esse número é $5$ e para vizinhanças de Moore esse número é $9$, ambas em duas dimensões. Esse é um avanço considerável em comparação com o algoritmo de  Hoshen-Kopelman que, por análise prória do autor deste trabalho, demonstrou ter complexidade $O(N^2)$.
 
 \section{Metodologias de análise}
 
@@ -804,22 +814,143 @@ Portanto, assumindo que o preço está diretamente relacionado ao valor do produ
 
 Dessa análise foi percebido que, quanto menos vizinhos cada célula tem, mais rápido o sistema oscila, independentemente do valor do ajuste máximo de limiar $q$. Interpretando novamente para o mercado financeiro entenderíamos que quanto menos contatos um agente econômico tem, mais rápido o sistema econômico oscila. Equivalentemente, se os agentes econômicos têm mais contatos, o sistema oscila mais lentamente. Interpretamos essa descoberta assim: quanto mais contatos um agente econômico tem, mais ele será influenciado, tornando suas decisões mais parecidas com as dos seus agentes próximos e assim tornando as mudanças de opinião mais lentas.
 
+
 \section{A análise da Afinidade}
 Como explicado na seção de metodologia, foi constatado que o número de aglomerados e o estado médio tendem a estar relacionados linearmente, e para estudar esse fenômeno foi definido o conceito de Afinidade, sendo realizadas várias simulações.
 
-Uma análise da afinidade para várias larguras de matrizes e vários valores de ajuste máximo de limiar revelou que os gráficos desses coeficientes angulares em função de $q$ apresentam todos um formato sigmóide, semelhante a uma função logística. 
+Uma análise da afinidade para várias larguras de matrizes e vários valores de ajuste máximo de limiar revelou que os gráficos desses coeficientes angulares em função de $q$ apresentam todos um formato sigmóide, semelhante a uma função logística. Também foi verificado que a Afinidade depende da largura da matriz. Essas observações estão ilustradas nas Figuras \ref{fig:afinidades}a-b.
 \begin{figure}
     \centering
-    %\includegraphics[width=.9\linewidth]{afinidadesQ0a200L750a2000.png}
-    \caption{Demonstração da independência da afinidade em relação à largura $L$ da matriz utilizada nas simulações. A sobreposição das seis curvas é aproximadamente absoluta até $q\approx 30$, divergindo levemente entre $q\approx 50$ e $q\approx 200$ devido à natureza estocástica da simulação.}
-    \label{fig:afinidadesQ0a200L750a2000}
+    \subfloat[Afinidades das simulações com vizinhança de VonNeumann. Percebe-se um ponto crítico próximo de $q=2$.]{\includegraphics[width=0.67\textwidth]{afinidadeVonNeumann.png}}
+
+    \subfloat[Afinidades das simulações com vizinhança de Moore. Percebe-se um ponto crítico próximo de $q=5$.]{\includegraphics[width=0.67\textwidth]{afinidadeMoore.png}}
+    \caption{Gráficos das afinidades para vizinhanças de VonNeumann e de Moore. Em ambos os casos percebe-se que o crescimento do afinidade no ponto crítico é menor para larguras menores de matrizes, como pode ser observado entre os pontos para $L=50$ (\texttt{+}) e $L=500$ ($\square$).}
+    \label{fig:afinidades}
 \end{figure}
 
-Também foi verificado que a Afinidade depende da largura da matriz, como está exibido na Figura .
+Devido ao crescimento diferente entre as afinidades para larguras diferentes de matrizes, foi feita a derivada da afinidade em função do ajuste máximo de limiar $q$. Os resultados estão exibidos nas Figuras \ref{fig:DerivadasAfinidades}a-b. Desses dados foi estimado o valor máximo da derivada em função da largura $L$, que gerou as Tabelas \ref{tab:maximosAfinidadeVonNeumann} e \ref{tab:maximosAfinidadeMoore}.
+
+\begin{figure}
+  \centering
+  \subfloat[Derivadas das afinidades em função de $q$ para as simulações com vizinhança de VonNeumann. Novamente percebe-se o ponto crítico próximo a $q=2$. A derivada cresce e cai rapidamente em volta do máximo.]{\includegraphics[width=0.67\textwidth]{afinidadeDeriVonNeumann.png}}
+
+  \subfloat[Derivadas das afinidades em função de $q$ para as simulações com vizinhança de Moore. O ponto crítico próximo de $q=5$ permanece. Para esta vizinhança é observado um crescimento lento da derivada até o máximo e uma queda brusca após o máximo.]{\includegraphics[width=0.67\textwidth]{afinidadeDeriMoore.png}}
+  \caption{Gráficos das derivadas das Afinidades em função do ajuste máximo de limiar $q$ para várias larguras de matriz diferentes. Nestes gráficos fica mais perceptível a diferença de inclinação no ponto crítico para os diferentes tamanhos de matriz.}
+  \label{fig:DerivadasAfinidades}
+\end{figure}
+
+\begin{table}
+  \centering
+  \caption{Posições x e y para os máximos das derivadas da Afinidade em função de $q$ para várias larguras de matrizes em simulações com vizinhança de VonNeumann. Valores maiores de $y$ representam pontos críticos mais bruscos no gráfico da afinidade em função de $q$. Como observado nos gráficos, os dados mostram que o ponto crítico acontece perto de $2$, mais precisamente por volta de 1.75 para os dados analisados.}
+  \label{tab:maximosAfinidadeVonNeumann}
+  \begin{tabular}{ccc}\toprule
+    L	& Máximo $x$ (q)	& Maximo $y$ (d Afinidade / dq)\\\midrule\midrule
+    50	& 1.60 &	0.760\\
+    100	& 1.72 &	0.938\\
+    250	& 1.82 &	1.241\\
+    500	& 1.87 &	1.324\\\bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}
+  \centering
+  \caption{Posições x e y para os máximos das derivadas da Afinidade em função de $q$ para várias larguras de matrizes em simulações com vizinhança de Moore. Valores maiores de $y$ representam pontos críticos mais bruscos no respectivo gráfico da afinidade em função de $q$. Semelhante aos gráficos, o ponto crítico acontece por volta de 5 para as larguras analisadas.}
+  \label{tab:maximosAfinidadeMoore}
+  \begin{tabular}{ccc}\toprule
+    L	& Máximo $x$ (q)	& Maximo $y$ (d Afinidade / dq)\\\midrule\midrule
+    50	& 4.50	& 0.293\\
+    100	& 4.90	& 0.371\\
+    250	& 5.10	& 0.469\\
+    500	& 5.22	& 0.572\\\bottomrule
+  \end{tabular}
+\end{table}
+
+A interpretação da afinidade foi feita considerando o conceito de liquidez de mercado, que é definida por \citeonline{anbima4} como:
+\begin{citacao}
+  A liquidez de um ativo pode ser definida como a facilidade com que este ativo pode ser
+comprado ou vendido no mercado a um preço adequado. Em outras palavras, a liquidez indica
+justamente a velocidade com que um ativo pode ser negociado sem que a própria negociação
+influencie no preço do ativo. \cite{anbima4}
+\end{citacao}
+
+Se considerarmos o ajuste de limiar $q$ como sendo a liquidez, as células da matriz como agentes mercadológicos, o estado das células como \texttt{+1}=comprando e \texttt{-1}=vendendo, e o limiar de cada célula como a facilidade que cada célula tem de vender (limiar positivo) ou comprar (limiar negativo) um produto, então os dados obtidos nos fornecem um resultado interessante: quanto maior a liquidez de um produto num mercado (conjunto de agentes comprando ou vendendo um mesmo produto), mais os agentes mercadológicos tendem a comprar ou vender em conjunto, passando por um ponto crítico no qual o mercado todo entra em sincronia, tendo agentes que comprar e vendem em conjunto. Isso acontece porque quanto maior a liquidez (q), maior a afinidade aumenta. Só que a afinidade é uma medida de quanto as células estão unidas (em aglomerados) e sincronizadas. Pontanto é válida a interpretação.
+
+Também foi conjecturada uma aplicação ao mundo real com base no que foi discutido acima: ao passo em que um mercado cresce e a liquidez do produto comercializado aumenta, a quantidade de agentes negociando o produto também aumentará, aumentando a necessidade de centros de negociação cada vez maiores a fim de comportar tantos agentes. A nossa pesquisa sobre afinidade revelou que, apesar de esse crescimento ser suave para a maioria dos valores de liquidez, existirá um momento em que os agentes se unirão em um único e grande centro de negociações. 
+
+De acordo com o histórico institucional do CEASA-PR disponível no site \url{http://www.ceasa.pr.gov.br/modules/conteudo/conteudo.php?conteudo=1} (acesso em 31 de maio de 2019): ``Com o crescimento dos centros urbanos do país, o processo de distribuição de produtos hortigranjeiros tornou-se mais complexo e oneroso, o que aliado à precariedade dos mercados tradicionais, suscitou a necessidade de aperfeiçoamento das estruturas de comercialização desses produtos.'' Isso está alinhado com os estudos realizados, sendo que no caso do CEASA-PR, o fator decisivo para a aglomeração ou ponto crítico foram os altos custos da alternativa. 
+
+\section{Caos}
+
+A verificação de caos foi feita como estudo adicional e foi feita utilizando a função $\Delta^\frac{1}{10}$ que provamos na metodologia ser equivalente, para os fins desta análise, ao coeficiente de Lyapunov. Lembrando que $\Delta^\frac{1}{10}>1$ implica em caos e $\Delta^\frac{1}{10}<-1$ implica em regimes estáveis, os dados obtidos estão dispostos nas Tabelas \ref{tab:mediaDeltaMoore} e \ref{tab:mediaDeltaVonNeumann}. As Figuras \ref{fig:caos}a-c mostram o espectro de caos (utilizando o $\Delta^\frac{1}{10}<-1$) obtido para as simulações com $q=0.1$ e vizinhança de Moore. A grande surpresa que surgiu neste estudo foi a observação de como a modificação de uma única célula entre 9999 outras foi capaz de gerar comportamentos tão diferentes a longo prazo, como foi observado na Figura \ref{fig:caos}-a. Os estudos que foram feitos utilizando mais de 100 células, ou 1\% das células, como ruído, apesar de terem sido executados com a mesma seriedade dos outros casos, tiveram um objetivo mais lúdico do que prático pois já era esperado que eles se comportariam de forma diferente em relação aos dados originais utilizados como base.
+
+
+\begin{table}[h]
+  \centering
+  \caption{Valores médios para $\Delta^\frac{1}{10}$ obtidos na simulação com Vizinhança de Moore. Apesar de todos serem maiores que 1, indicando a presença de caos, alguns são muito próximos de $1$, indicando sistemas menos caóticos no intervalo de ciclos observado.}
+  \label{tab:mediaDeltaMoore}
+  \begin{tabular}{c ccccc}
+    \toprule
+    q & \multicolumn{5}{c}{Valor médio de $\Delta^\frac{1}{10}$ para $\varepsilon$ máximo de}\\
+     & 0.01\% & 0.1\% & 1\% & 10\% & 100\%\\\midrule\midrule
+    0.1 & 1.8794	& 1.8456	& 1.7018	& 1.4393	& 1.8960\\
+    1.0 & 1.8958	& 1.7182	& 1.5883	& 1.4302	& 1.2938\\
+    2.0 & 2.0125	& 2.3890	& 1.6698	& 1.6073	& 1.5662\\
+    3.0 & 1.2384	& 1.7053	& 1.9184	& 1.4607	& 1.4430\\
+    4.0 & 1.3701	& 2.4282	& 1.9308	& 1.7997	& 1.3555\\
+    5.0 & 1.8896	& 1.6471	& 1.5051	& 2.2331	& 1.2264\\
+    6.0 & 1.5401	& 1.3400	& 1.4389	& 1.0733	& 1.1573\\
+    7.0 & 1.5848	& 1.4721	& 1.3281	& 1.1638	& 1.1869\\
+    8.0 & 1.3449	& 1.3471	& 1.2113	& 1.2330	& 1.0450\\
+    9.0 & 1.4383	& 1.4295	& 1.2436	& 1.0116	& 1.0921\\
+    10.0& 1.3170	& 1.7878	& 1.2356	& 1.2074	& 1.2092\\\bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Valores médios para $\Delta^\frac{1}{10}$ obtidos na simulação com Vizinhança de VonNeumann. Novamente, a maioria está muito acima de 1, indicando a presença de caos. Também, alguns estão bem próximos de $1$, indicando sistemas com grandes regiões menos caóticas no intervalo de ciclos observado.}
+  \label{tab:mediaDeltaVonNeumann}
+  \begin{tabular}{c ccccc}
+    \toprule
+    q & \multicolumn{5}{c}{Valor médio de $\Delta^\frac{1}{10}$ para $\varepsilon$ máximo de}\\
+     & 0.01\% & 0.1\% & 1\% & 10\% & 100\%\\\midrule\midrule
+    0.1 & 2.2097 &	1.2283 &	1.6002 &	1.5985 &	2.0912\\
+    1.0 & 1.3265 &	1.8247 &	1.5717 &	1.3925 &	1.4241\\
+    2.0 & 1.3792 &	1.4424 &	1.4064 &	1.3782 &	1.5158\\
+    3.0 & 1.5689 &	1.4663 &	1.3149 &	1.1522 &	1.0118\\
+    4.0 & 1.4678 &	1.4277 &	1.3314 &	1.1317 &	1.0245\\
+    5.0 & 1.3191 &	1.7714 &	1.2601 &	1.0664 &	1.7707\\
+    6.0 & 1.4932 &	1.7547 &	1.7581 &	1.0064 &	1.0259\\
+    7.0 & 1.4846 &	1.3871 &	1.2438 &	1.0284 &	0.9679\\
+    8.0 & 1.3058 &	1.3805 &	1.2361 &	1.1376 &	1.1212\\
+    9.0 & 1.4717 &	1.3764 &	1.1491 &	1.0828 &	1.0164\\
+    10.0& 1.3545 &	1.2322 &	1.3704 &	1.1948 &	0.9669\\\bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}
+  \centering
+  \subfloat[Espectro do caos para uma simulação que teve 1 célula modificada entre as 10000 da matriz original (0.01\%). Percebe-se que o sistema se comportou quase que identicamente com o original durante os primeiros 1000 ciclos, ocorrendo uma ``quebra caótica'' no ciclo 1000.]{\hspace{2cm}\includegraphics[width=0.6\textwidth]{caosq01noise1.png}\hspace{2cm}}
+
+  \subfloat[Espectro do caos para uma simulação que teve 10 entre 10000 células modificadas (0.1\%). É possível perceber, pelos pontos com $\Delta^\frac{1}{10}$ próximo de 0 nos ciclos entre 0 e 1000, que o sistema se comportou parcialmente regular durante os primeiros ciclos, ficando totalmente caótico a partir do ciclo 1000.]{\hspace{2cm}\includegraphics[width=0.6\textwidth]{caosq01noise10.png}\hspace{2cm}}
+  
+  \subfloat[Espectro do caos para uma simulação que teve 1\% das células modificadas. Este caso demonstrou um comportamento diferente dos anteriores, apresentando caos desde o começo e entrando em harmonia com os dados de base em alguns momentos, como é visualizável entre os ciclos 5000 e 6000.]{\hspace{2cm}\includegraphics[width=0.6\textwidth]{caosq01noise100.png}\hspace{2cm}}
+  \caption{Exemplos de comportamentos caóticos obtidos para simulações com vizinhança de Moore, $L=100$ e $q=0.1$.}
+  \label{fig:caos}
+\end{figure}
 
 \section{Fenômenos não estudados}
 
-Durante a pesquisa foram encontrados vários gráficos com comportamentos interessantes, como os das Figuras \ref{fig:dataL1000Q75ClustersVsAvgThres}.
+Durante a pesquisa foram encontrados vários gráficos com comportamentos interessantes, como os das Figuras \ref{fig:clusterthres}. Gráficos como esses aconteceram recorrentemente nas simulações ao comparar o número de aglomerados com o Limiar Médio. Apesar do comportamento interessante, não foram feitos estudos sobre esta manifestação da simulação por desconhecimento de ferramentas próprias para tratar esses dados.
+
+\begin{figure}
+  \centering
+  \subfloat[Padrão quase toroidal observado ao comparar o número de aglomerados em função do limiar médio em uma simulação com vizinhança de Moore. Na imagem estão representados os 10000 pontos da simulação realizada.]{\includegraphics[width=0.67\textwidth]{ICA-L100-q4_599-seed593122627-ClusterVsAvgThres.png}}
+
+  \subfloat[Padrão toroidal com um núcleo formado por 10000 pontos de uma simulação com vizinhança de Moore.]{\includegraphics[width=0.67\textwidth]{ICA-L250-q5_0-seed134642580-ClusterVsAvgThres.png}}
+  \caption{Gráficos do Número de Aglomerados (\textit{Number of Clusters}) em função do Limiar Médio (\textit{Average Threshold}). Esses padrões foram muito comuns nos resultados das simulações realizadas, tanto para vizinhanças de Moore como para de VonNeumann, acontecendo todos na relação entre Número de Aglomerados e Limiar Médio.}
+  \label{fig:clusterthres}
+\end{figure}
 
 % ----------------------------------------------------------
 % Finaliza a parte no bookmark do PDF
@@ -834,9 +965,7 @@ Durante a pesquisa foram encontrados vários gráficos com comportamentos intere
 \chapter{Conclusão}
 % ---
 
-Com os trabalhos desenvolvidos neste semestre foi possível desenvolver habilidades de análise e reprodução de autômatos celulares (em especial o \textit{Inhomogenous Cellular Automata} de Stauffer). A grande surpresa do estudo aconteceu nos recorrentes padrões lineares no caso dos gráficos do número de aglomerados em função do estado médio, sendo ainda mais surpreendente a independência da afinidade em relação à largura da matriz utilizada. A existência de discos como atratores de vários dos gráficos de número número de aglomeros em função do limiar médio também foi inesperada. Dos estudos relacionados à simulações em três dimensões, foi fortalecida a necessidade de códigos de programação bem organizados, a fim de evitar incertezas sobre a validade dos resultados.
-
-Os próximos passos incluem estudar o motivo da existência do máximo no gráfico da afinidade média (Figura \ref{fig:afinidadeMedia}), possivelmente relacionando-o ao potencial de Lennard-Jones, analisar os atratores nos gráficos do número de aglomerados em função do limiar médio utilizando teoria de dinâmica não-linear e caos, e explorar autômatos não lineares em dimensões maiores do que 2.
+Com os trabalhos desenvolvidos neste semestre foi possível desenvolver habilidades de análise e reprodução de autômatos celulares (em especial o \textit{Inhomogenous Cellular Automata} de Stauffer). A grande surpresa aconteceram neste estudo: a primeira foi os recorrentes padrões lineares no caso dos gráficos do número de aglomerados em função do estado médio; a segunda aconteceu na observação do poder que a modificação de $0.01\%$ da matriz inicial de uma simulação consegue causar a longo prazo, não deixando dúvidas de que o sistema estudado é caótico. A aplicação em dois conceitos da economia, a volatilidade e a liquidez, também serviram quase que perfeitamente como exemplos da aplicação do sistema desenvolvido, sendo possível encontrar exemplos como o CEASA, cuja necessidade de criação corrobora com o ponto crítico nos gráficos da Afinidade em função da Liquidez. Não menos importante se mostrou a fertilidade do \textit{Inhomogenous Cellular Automata} desenvolvido inicialmente por \citeonline{stauffer}, que pode ser modificado de inúmeras formas, gerando resultados diferentes e interessantes, como foi o caso de nosso desenvolvimento utilizando vizinhança de Moore. Exemplos disso foram os padrões que se assemelham a toróides ou planetas com anéis encontrados nas simulações ao se comparar o número de aglomerados com o limiar médio. Além dos resultados obtidos neste trabalho, tão importante foram os aprendizados desenvolvidos na realização dele, tanto em desenvolvimento de projetos, como em programação, e interpretação de dados. O leitor que se sentir interessado em explorar o programa de simulações de autômatos celulares desenvolvido pode obtê-lo acessando \url{https://github.com/Ly54ndr0/CellularAutomataExplorer} (ainda em desenvolvimento).
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -864,24 +993,24 @@ Os próximos passos incluem estudar o motivo da existência do máximo no gráfi
 % ---
 % Inicia os apêndices
 % ---
-\begin{apendicesenv}
+%\begin{apendicesenv}
 
 % Imprime uma página indicando o início dos apêndices
-\partapendices
+%\partapendices
 
 % ----------------------------------------------------------
-\chapter{Quisque libero justo}
+%\chapter{Quisque libero justo}
 % ----------------------------------------------------------
 
-\lipsum[50]
+%\lipsum[50]
 
 % ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+%\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
+%ac pretium ante justo a nulla curabitur tristique arcu eu metus}
 % ----------------------------------------------------------
-\lipsum[55-57]
+%\lipsum[55-57]
 
-\end{apendicesenv}
+%\end{apendicesenv}
 % ---
 
 
@@ -892,36 +1021,36 @@ ac pretium ante justo a nulla curabitur tristique arcu eu metus}
 % ---
 % Inicia os anexos
 % ---
-\begin{anexosenv}
+%\begin{anexosenv}
 
 % Imprime uma página indicando o início dos anexos
-\partanexos
+%\partanexos
 
 % ---
-\chapter{Morbi ultrices rutrum lorem.}
+%\chapter{Morbi ultrices rutrum lorem.}
 % ---
-\lipsum[30]
+%\lipsum[30]
 
 % ---
-\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-parturient montes nascetur ridiculus mus}
+%\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
+%parturient montes nascetur ridiculus mus}
 % ---
 
-\lipsum[31]
+%\lipsum[31]
 
 % ---
-\chapter{Fusce facilisis lacinia dui}
+%\chapter{Fusce facilisis lacinia dui}
 % ---
 
-\lipsum[32]
+%\lipsum[32]
 
-\end{anexosenv}
+%\end{anexosenv}
 
 %---------------------------------------------------------------------
 % INDICE REMISSIVO
 %---------------------------------------------------------------------
-\phantompart
-\printindex
+%\phantompart
+%\printindex
 %---------------------------------------------------------------------
 
 \end{document}
