@@ -21,7 +21,9 @@
 \contentsline {subsection}{\numberline {2.4.3}Caos}{33}{subsection.2.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Resultados e An\IeC {\'a}lises}}{35}{chapter.3}
-\contentsline {section}{\numberline {3.1}Fen\IeC {\^o}menos n\IeC {\~a}o estudados}{36}{section.3.1}
+\contentsline {section}{\numberline {3.1}A interpreta\IeC {\c c}\IeC {\~a}o por Volatilidade}{35}{section.3.1}
+\contentsline {section}{\numberline {3.2}A an\IeC {\'a}lise da Afinidade}{35}{section.3.2}
+\contentsline {section}{\numberline {3.3}Fen\IeC {\^o}menos n\IeC {\~a}o estudados}{35}{section.3.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o}}{37}{chapter.4}
@@ -29,7 +31,7 @@
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{39}{section*.28}
+\contentsline {part}{\uppercase {Ap\^endices}}{39}{section*.25}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -42,7 +44,7 @@
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{45}{section*.29}
+\contentsline {part}{\uppercase {Anexos}}{45}{section*.26}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
@@ -57,4 +59,4 @@
 \contentsline {appendix}{\chapternumberline {C}\MakeTextUppercase {Fusce facilisis lacinia dui}}{51}{appendix.anexochapback.3}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\'Indice}{53}{section*.31}
+\contentsline {chapter}{\'Indice}{53}{section*.28}

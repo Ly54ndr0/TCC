@@ -753,70 +753,28 @@ Considerando que computadores geram números aleatórios a partir de uma \textit
  
  A verificação da quantidade de caos foi feita listando os valores médios de $\Delta^\frac{1}{10}$ para matrizes iniciais que tiveram entre $0.01\%$ a $100\%$ de suas células modificadas, para ambos os tipos de vizinhanças.
 
+
+
 \chapter{Resultados e Análises}
 
-O primeiro estudo foi realizado quanto ao efeito da topologia no comportamento do valor médio e do limiar médio em função do ciclo. Foi observado que topologias com bordas conectadas apresentam gráficos mais suaves em relação a topologias com bordas fechadas. %Isso está ilustrado nas Figuras \ref{fig:topocaixa} e \ref{fig:topotorus}.
+\section{A interpretação por Volatilidade}
 
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=.9\linewidth]{topocaixa%.png}
-%    \caption{Topologia de caixa}
-%    \label{fig:topocaixa}
-%\end{figure}
-%
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=.9\linewidth]{topotorus%.png}
-%    \caption{Topologia de Torus}
-%    \label{fig:topotorus}
-%\end{figure}
+\section{A análise da Afinidade}
+Como explicado na seção de metodologia, foi constatado que o número de aglomerados e o estado médio tendem a estar relacionados linearmente, e para estudar esse fenômeno foi definido o conceito de Afinidade, sendo realizadas várias simulações.
 
-O segundo estudo foi feito quanto ao número de aglomerados e índice de células pertencentes a aglomerados. Também foi explorada a relação entre estado médio e número de aglomerados. Foi observado que o índice de células em aglomerados aumenta quando o estado médio fica positivo, como ilustrado na Figura \ref{fig:dataL2000Q100CellInClusterAvgStateVsCycle}. 
-\begin{figure}[h]
-    \centering
-    %\includegraphics[width=.9\linewidth]{dataL2000Q100CellInClusterAvgStateVsCycle.png}
-    \caption{Demonstração da correlação entre o índice de células positivas que pertencem a algum aglomerado e o estado médio do sistema. Quando o estado médio fica mais positivo (existem mais células positivas), o índice de células positivas em aglomerados aumenta proporcionalmente. Analogamente, se o estado médio diminui, o índice de células positivas em aglomerados também diminui.}
-    \label{fig:dataL2000Q100CellInClusterAvgStateVsCycle}
-\end{figure}
-Isso demonstra que esses dois valores estão correlacionados, implicando que as células tendem a estarem aglomeradas. 
-
-Quanto à relação entre o número de aglomerados em função do estado médio, foi constatado que estes tendem a estar relacionados linearmente como na Figura \ref{fig:dataL1750Q100ClustersVsAvgState}. 
-\begin{figure}[h]
-    \centering
-    %\includegraphics[width=.9\linewidth]{dataL1750Q100ClustersVsAvgState.png}
-    \caption{Exemplo da tendência de o número de aglomerados tender a ser linearmente dependente ao estado médio. Este gráfico contém 300 pontos de dados obtidos numa simulação com ajuste máximo de limiar igual a $1.00$ e largura de matriz igual a $1750$. Esse padrão foi observado em todas as outras medições realizadas.}
-    \label{fig:dataL1750Q100ClustersVsAvgState}
-\end{figure}
-Uma análise dos coeficientes angulares das retas que melhor aproximam esses dados (através do Método dos Mínimos Quadrados) para várias larguras de matrizes e vários valores de ajuste máximo de limiar revelou que os gráficos desses coeficientes angulares em função de $q$ apresentam um ``vale'' semelhante ao do potencial de Lennard-Jones, como exibido na Figura \ref{fig:DadosSlopeL1000}.
-\begin{figure}
-    \centering
-    %\includegraphics[width=.9\linewidth]{DadosSlopeL1000.png}
-    \caption{Exemplo da curva  em função do ajuste máximo de limiar $q$ encontrada para a maioria dos gráficos das inclinações do número de aglomerados \textit{versus} estado médio. Inicialmente foi conjecturada uma semelhança como potencial de Lennard-Jones.}
-    \label{fig:DadosSlopeL1000}
-\end{figure}
-A presença desse ``poço'' em todas as simulações realizadas incentivou a definição da afinidade em função do ajuste máximo de limiar.
-
-\textbf{Definição:} No InCA, seja $I_{q,L}$ a inclinação da reta que melhor aproxima os dados obtidos em uma simulação com ajuste máximo de limiar igual a $q$ e largura de matriz $L$. Seja $Imin_L$ a menor inclinação para um dado $L$. Definimos a \textit{afinidade em função de $q$ e $L$} como sendo $A_{q,L}=-I_{q,L}/Imin_L$.
-
-Contudo, ao analisar a afinidade para várias larguras $L$ diferentes, foi verificado que a Afinidade independe da largura da matriz, como está exibido na Figura \ref{fig:afinidadesQ0a200L750a2000}.
+Uma análise da afinidade para várias larguras de matrizes e vários valores de ajuste máximo de limiar revelou que os gráficos desses coeficientes angulares em função de $q$ apresentam todos um formato sigmóide, semelhante a uma função logística. 
 \begin{figure}
     \centering
     %\includegraphics[width=.9\linewidth]{afinidadesQ0a200L750a2000.png}
     \caption{Demonstração da independência da afinidade em relação à largura $L$ da matriz utilizada nas simulações. A sobreposição das seis curvas é aproximadamente absoluta até $q\approx 30$, divergindo levemente entre $q\approx 50$ e $q\approx 200$ devido à natureza estocástica da simulação.}
     \label{fig:afinidadesQ0a200L750a2000}
 \end{figure}
-Esse fato, corroborado pelo mapa da Figura \ref{fig:afinidadesHeatmap},
-incentiva a seguinte definição:
 
-\textbf{Definição:} A \textit{afinidade em função de $q$} é dada pelo valor médio da \textit{afinidade em função de $q$ e $L$} através de várias medições para vários valores de $L$.
-
-Com base nessa definição, foi encontrado o gráfico da afinidade através das simulações realizadas. Esse gráfico está exibido na Figura \ref{fig:afinidadeMedia}.
-
-Também foram buscados padrões de caos e atratores na dinâmica não-linear das simulações realizadas, sendo encontrados vários gráficos com comportamentos interessantes, como o da Figura \ref{fig:dataL1000Q75ClustersVsAvgThres}. Contudo, ainda não foi verificado se existe caos nesses sistemas.
-
-Por fim foram feitas simulações considerando matrizes em três dimensões, nas quais foi possível constatar comportamentos análogos aos observados no caso de duas dimensões, como a relação entre estado médio e limiar médio em função do ciclo de simulação, além da linearidade do número de aglomerados em função do estado médio. Trabalhos nessas simulações foram descontinuados devido a incertezas sobre a precisão do código utilizado.
+Também foi verificado que a Afinidade depende da largura da matriz, como está exibido na Figura .
 
 \section{Fenômenos não estudados}
+
+Durante a pesquisa foram encontrados vários gráficos com comportamentos interessantes, como os das Figuras \ref{fig:dataL1000Q75ClustersVsAvgThres}.
 
 % ----------------------------------------------------------
 % Finaliza a parte no bookmark do PDF

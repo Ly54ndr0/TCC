@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  30 MAY 2019 19:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.27)  30 MAY 2019 21:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1242,12 +1242,9 @@ l.358 A
 
 ] [9] [10
 
-] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lof
-Underfull \vbox (badness 10000) has occurred while \output is active []
+] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lof) [11] [12
 
- [11]) [12] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.loq) [13
-
-] [14
+] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.loq) [13] [14
 
 ] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.lot) [15] [16
 
@@ -1261,21 +1258,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] (/home/ly/Documents/TCC/LaTeX-TCC/TCC.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 32.
+(Font)              <14.4> on input line 34.
 
-Overfull \hbox (6.4481pt too wide) in paragraph at lines 40--40
+Overfull \hbox (6.4481pt too wide) in paragraph at lines 42--42
  [][] [][][]\T1/lmss/bx/n/12 NULLAM ELE-MEN-TUM URNA VEL IM-PER-DIET 
  []
 
 
-Overfull \hbox (1.3121pt too wide) in paragraph at lines 40--40
+Overfull \hbox (1.3121pt too wide) in paragraph at lines 42--42
  \T1/lmss/bx/n/12 SO-DA-LES ELIT IP-SUM PHA-RE-TRA LI-GULA AC 
  []
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21] [22]
+[21]) [22]
 
 LaTeX Warning: Citation `britannica1' on page 23 undefined on input line 467.
 
@@ -1329,7 +1323,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--560
 
  []
 
-<matrizL100Ciclo0.png, id=270, 48.18pt x 48.18pt>
+<matrizL100Ciclo0.png, id=256, 48.18pt x 48.18pt>
 File: matrizL100Ciclo0.png Graphic file (type png)
  <use matrizL100Ciclo0.png>
 Package pdftex.def Info: matrizL100Ciclo0.png used on input line 565.
@@ -1341,7 +1335,7 @@ LaTeX Warning: Citation `stauffer' on page 28 undefined on input line 570.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28] <contamination.png, id=278, 198.7425pt x 198.7425pt>
+ [28] <contamination.png, id=264, 198.7425pt x 198.7425pt>
 File: contamination.png Graphic file (type png)
  <use contamination.png>
 Package pdftex.def Info: contamination.png used on input line 578.
@@ -1349,7 +1343,7 @@ Package pdftex.def Info: contamination.png used on input line 578.
  [29 </home/ly/Documents/TCC/LaTeX-TCC/matrizL100Ciclo0.png (PNG copy)>]
 Underfull \vbox (badness 1418) has occurred while \output is active []
 
- [30 </home/ly/Documents/TCC/LaTeX-TCC/contamination.png>] <ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png, id=297, 610.28pt x 343.2825pt>
+ [30 </home/ly/Documents/TCC/LaTeX-TCC/contamination.png>] <ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png, id=282, 610.28pt x 343.2825pt>
 File: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png Graphic file (type png)
  <use ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png>
 Package pdftex.def Info: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png used on input line 612.
@@ -1357,12 +1351,12 @@ Package pdftex.def Info: ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png used o
  [31 </home/ly/Documents/TCC/LaTeX-TCC/ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32] <seed156501936.png, id=308, 409.53pt x 409.53pt>
+ [32] <seed156501936.png, id=294, 409.53pt x 409.53pt>
 File: seed156501936.png Graphic file (type png)
  <use seed156501936.png>
 Package pdftex.def Info: seed156501936.png used on input line 719.
 (pdftex.def)             Requested size: 204.74861pt x 204.75198pt.
- <seed156501936thres.png, id=309, 409.53pt x 409.53pt>
+ <seed156501936thres.png, id=295, 409.53pt x 409.53pt>
 File: seed156501936thres.png Graphic file (type png)
  <use seed156501936thres.png>
 Package pdftex.def Info: seed156501936thres.png used on input line 723.
@@ -1371,41 +1365,35 @@ Package pdftex.def Info: seed156501936thres.png used on input line 723.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<seed263598624.png, id=310, 409.53pt x 409.53pt>
+<seed263598624.png, id=296, 409.53pt x 409.53pt>
 File: seed263598624.png Graphic file (type png)
  <use seed263598624.png>
 Package pdftex.def Info: seed263598624.png used on input line 732.
 (pdftex.def)             Requested size: 204.74861pt x 204.75198pt.
- <seed263598624thres.png, id=311, 409.53pt x 409.53pt>
+ <seed263598624thres.png, id=297, 409.53pt x 409.53pt>
 File: seed263598624thres.png Graphic file (type png)
  <use seed263598624thres.png>
 Package pdftex.def Info: seed263598624thres.png used on input line 736.
 (pdftex.def)             Requested size: 204.74861pt x 204.75198pt.
- [33] [34 </home/ly/Documents/TCC/LaTeX-TCC/seed156501936.png> </home/ly/Documents/TCC/LaTeX-TCC/seed156501936thres.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624thres.png (PNG copy)>] [35
+ [33] [34 </home/ly/Documents/TCC/LaTeX-TCC/seed156501936.png> </home/ly/Documents/TCC/LaTeX-TCC/seed156501936thres.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624.png (PNG copy)> </home/ly/Documents/TCC/LaTeX-TCC/seed263598624thres.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 35 undefined on input line 777.
+
+[35
+
+] [36
 
 ]
 
-LaTeX Warning: Reference `fig:afinidadesHeatmap' on page 36 undefined on input line 808.
-
-
-LaTeX Warning: Reference `fig:afinidadeMedia' on page 36 undefined on input line 813.
-
-
-LaTeX Warning: Reference `fig:dataL1000Q75ClustersVsAvgThres' on page 36 undefined on input line 815.
-
-[36]
-
-LaTeX Warning: Reference `fig:afinidadeMedia' on page 37 undefined on input line 836.
+LaTeX Warning: Reference `fig:afinidadeMedia' on page 37 undefined on input line 794.
 
 No file TCC.bbl.
-[37
-
-] [38
+[37] [38
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 868.
+(hyperref)                removing `\uppercase' on input line 826.
 
 [39
 
@@ -1418,7 +1406,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 896.
+(hyperref)                removing `\uppercase' on input line 854.
 
 [45
 
@@ -1446,30 +1434,30 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@toc=\write8
 \openout8 = `TCC.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 924.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 924.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 882.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 882.
  (/home/ly/Documents/TCC/LaTeX-TCC/TCC.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 924.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 924.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 882.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 882.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 924.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 882.
  ) 
 Here is how much of TeX's memory you used:
- 16354 strings out of 493029
- 243020 string characters out of 6136233
- 514558 words of memory out of 5000000
- 19309 multiletter control sequences out of 15000+600000
- 99655 words of font info for 163 fonts, out of 8000000 for 9000
+ 16343 strings out of 493029
+ 242789 string characters out of 6136233
+ 511426 words of memory out of 5000000
+ 19307 multiletter control sequences out of 15000+600000
+ 99223 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,13n,50p,1965b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,13n,50p,1965b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (55 pages, 465981 bytes).
+Output written on /home/ly/Documents/TCC/LaTeX-TCC/TCC.pdf (55 pages, 461149 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 531 compressed objects within 6 object streams
- 136 named destinations out of 1000 (max. 500000)
- 33052 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 519 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
+ 33068 words of extra memory for PDF output out of 35830 (max. 10000000)
 
