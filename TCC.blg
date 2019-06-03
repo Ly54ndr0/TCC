@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TCC.aux
-The style file: abntex2-alf.bst
+The style file: abntex2-num.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -17,53 +17,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Warning--campo year vazio ou faltando em britannica2
 Warning--campo year vazio ou faltando em britannica1
+Warning--campo year vazio ou faltando em britannica2
 Warning--campo year vazio ou faltando em britannica3
 +---------------------------------------------------------+
-| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Estilo bibliográfico abntex2-num.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 13 entries,
+You've used 14 entries,
             6714 wiz_defined-function locations,
-            1261 strings with 10589 characters,
-and the built_in function-call counts, 12683 in all, are:
-= -- 1487
-> -- 153
-< -- 255
-+ -- 349
-- -- 50
-* -- 732
-:= -- 1654
-add.period$ -- 54
-call.type$ -- 13
-change.case$ -- 83
-chr.to.int$ -- 19
-cite$ -- 15
-duplicate$ -- 1116
-empty$ -- 716
-format.name$ -- 230
-if$ -- 2694
+            1268 strings with 10727 characters,
+and the built_in function-call counts, 13277 in all, are:
+= -- 1564
+> -- 164
+< -- 256
++ -- 355
+- -- 52
+* -- 772
+:= -- 1684
+add.period$ -- 58
+call.type$ -- 14
+change.case$ -- 98
+chr.to.int$ -- 23
+cite$ -- 16
+duplicate$ -- 1164
+empty$ -- 752
+format.name$ -- 262
+if$ -- 2854
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 209
-newline$ -- 69
-num.names$ -- 50
-pop$ -- 239
+missing$ -- 231
+newline$ -- 73
+num.names$ -- 44
+pop$ -- 289
 preamble$ -- 1
-purify$ -- 39
+purify$ -- 44
 quote$ -- 0
-skip$ -- 1211
+skip$ -- 1239
 stack$ -- 1
-substring$ -- 545
-swap$ -- 415
+substring$ -- 563
+swap$ -- 437
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 5
 warning$ -- 3
-while$ -- 69
+while$ -- 64
 width$ -- 0
-write$ -- 195
+write$ -- 183
 (There were 3 warnings)

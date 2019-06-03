@@ -1,55 +1,40 @@
 \providecommand{\abntreprintinfo}[1]{%
  \citeonline{#1}}
-\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[AssociaÇÃo Brasileira das Entidades dos Mercados Financeiro e de
-  Capitais 2018]{anbima3}
-\abntrefinfo{ANBIMA}{ANBIMA}{2018a}
-{ASSOCIAÇÃO BRASILEIRA DAS ENTIDADES DOS MERCADOS FINANCEIRO E DE CAPITAIS.
-  \emph{Material de Estudos da Certificação CPA-10}: Conceitos básicos de
-  economia e finanças.
-São Paulo, SP, 2018. 49~p.}
-
-\bibitem[AssociaÇÃo Brasileira das Entidades dos Mercados Financeiro e de
-  Capitais 2018]{anbima4}
-\abntrefinfo{ANBIMA}{ANBIMA}{2018b}
-{ASSOCIAÇÃO BRASILEIRA DAS ENTIDADES DOS MERCADOS FINANCEIRO E DE CAPITAIS.
-  \emph{Material de Estudos da Certificação CPA-10}: Princípios de
-  investimento.
-São Paulo, SP, 2018. 63~p.}
-
-\bibitem[Bluman 2014]{statistics}
-\abntrefinfo{Bluman}{BLUMAN}{2014}
-{BLUMAN, A.~G. \emph{Elementary Statistics: a step by step approach}. 9. ed.
-  Rio de Janeiro: McGraw-Hill Education, 2014.}
-
-\bibitem[Britannica]{britannica2}
+\bibitem{britannica1}
 \abntrefinfo{Britannica}{BRITANNICA}{a}
-{BRITANNICA, E. \emph{Automata theory}. Publicação Online.
-Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/automaton}.
-  Acesso em: 14 de Dezembro de 2018.}
-
-\bibitem[Britannica]{britannica1}
-\abntrefinfo{Britannica}{BRITANNICA}{b}
 {BRITANNICA, E. \emph{Automaton}. Publicação Online.
 Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/automaton}.
   Acesso em: 14 de Dezembro de 2018.}
 
-\bibitem[Britannica]{britannica3}
+\bibitem{britannica2}
+\abntrefinfo{Britannica}{BRITANNICA}{b}
+{BRITANNICA, E. \emph{Automata theory}. Publicação Online.
+Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/automaton}.
+  Acesso em: 14 de Dezembro de 2018.}
+
+\bibitem{britannica3}
 \abntrefinfo{Britannica}{BRITANNICA}{c}
 {BRITANNICA, E. \emph{Cellular automata}. Publicação Online.
 Dispon{\'\i}vel em: \url{https://www.britannica.com/technology/automaton}.
   Acesso em: 14 de Dezembro de 2018.}
 
-\bibitem[King 2008]{king}
-\abntrefinfo{King}{KING}{2008}
-{KING, K.~N. \emph{C Programming: A Modern Approach}. 2. ed. New York: W W
-  Norton and Company, 2008.}
+\bibitem{wolfram}
+\abntrefinfo{Wolfram}{WOLFRAM}{2018}
+{WOLFRAM, S. \emph{A new kind of Science, Online}. 2018. Publicação Online.
+Dispon{\'\i}vel em: \url{www.wolframscience.com/nks/}. Acesso em: 14 de
+  Dezembro de 2018.}
 
-\bibitem[Kramer 2014]{klaus}
+\bibitem{stauffer}
+\abntrefinfo{Weisbuch e Stauffer}{WEISBUCH; STAUFFER}{2003}
+{WEISBUCH, G.; STAUFFER, D. Adjustment and social choice.
+\emph{Physica A}, v.~1, n.~323, p. 651--662, 2003.}
+
+\bibitem{klaus}
 \abntrefinfo{Kramer}{KRAMER}{2014}
 {KRAMER, K.
 \emph{Dinâmica de padrões em autômatos celulares com inércia}.
@@ -58,7 +43,7 @@ Tese (Doutorado) --- Departamento de Física, Universidade Federal do Paraná,
 Dispon{\'\i}vel em: \url{https://acervodigital.ufpr.br/handle/1884/37425}.
   Acesso em: 3 jul. 2011.}
 
-\bibitem[Lazzari 2018]{lazzari}
+\bibitem{lazzari}
 \abntrefinfo{Lazzari}{LAZZARI}{2018}
 {LAZZARI, R. de.
 \emph{Estudo de um autômato celular para modelar ciclos de expansão e
@@ -66,21 +51,39 @@ Dispon{\'\i}vel em: \url{https://acervodigital.ufpr.br/handle/1884/37425}.
 Disserta\c{c}\~{a}o (Relatório de Pesquisa) --- Departamento de Física,
   Universidade Federal do Paraná, 2018.}
 
-\bibitem[Weisbuch 2003]{stauffer}
-\abntrefinfo{Weisbuch}{WEISBUCH}{2003}
-{WEISBUCH, D.~S. G. Adjustment and social choice.
-\emph{Physica A}, v.~1, n.~323, p. 651--662, 2003.}
-
-\bibitem[Wilensky Junho de 2018]{netlogo}
+\bibitem{netlogo}
 \abntrefinfo{Wilensky}{WILENSKY}{Junho de 2018}
 {WILENSKY. \emph{NetLogo 6.0.4}. Junho de 2018. Publicação Online.
 Dispon{\'\i}vel em: \url{https://ccl.northwestern.edu}. Acesso em: Julho de
   2018.}
 
-\bibitem[Wolfram 2018]{wolfram}
-\abntrefinfo{Wolfram}{WOLFRAM}{2018}
-{WOLFRAM, S. \emph{A new kind of Science, Online}. 2018. Publicação Online.
-Dispon{\'\i}vel em: \url{www.wolframscience.com/nks/}. Acesso em: 14 de
-  Dezembro de 2018.}
+\bibitem{statistics}
+\abntrefinfo{Bluman}{BLUMAN}{2014}
+{BLUMAN, A.~G. \emph{Elementary Statistics: a step by step approach}. 9. ed.
+  Rio de Janeiro: McGraw-Hill Education, 2014.}
+
+\bibitem{king}
+\abntrefinfo{King}{KING}{2008}
+{KING, K.~N. \emph{C Programming: A Modern Approach}. 2. ed. New York: W W
+  Norton and Company, 2008.}
+
+\bibitem{marion}
+\abntrefinfo{Thornton e Marion}{THORNTON; MARION}{2004}
+{THORNTON, S.~T.; MARION, J.~B. \emph{Classical Dynamics of Particles and
+  Systems}. 5. ed. Belmont, CA, USA: Thomson Learning, 2004.}
+
+\bibitem{anbima3}
+\abntrefinfo{ANBIMA}{ANBIMA}{2018a}
+{ASSOCIAÇÃO BRASILEIRA DAS ENTIDADES DOS MERCADOS FINANCEIRO E DE CAPITAIS.
+  \emph{Material de Estudos da Certificação CPA-10}: Conceitos básicos de
+  economia e finanças.
+São Paulo, SP, 2018. 49~p.}
+
+\bibitem{anbima4}
+\abntrefinfo{ANBIMA}{ANBIMA}{2018b}
+{ASSOCIAÇÃO BRASILEIRA DAS ENTIDADES DOS MERCADOS FINANCEIRO E DE CAPITAIS.
+  \emph{Material de Estudos da Certificação CPA-10}: Princípios de
+  investimento.
+São Paulo, SP, 2018. 63~p.}
 
 \end{thebibliography}
