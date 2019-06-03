@@ -368,15 +368,21 @@ Agradeço ao meu Orientador Marlus Koehler pela liberdade e pela confiança no m
 % ---
 % Epígrafe
 % ---
-%\begin{epigrafe}
-%    \vspace*{\fill}
-%	\begin{flushright}
-%		\textit{``Texto\\
-%		Tente outra vez\\
-%		''\\
-%		(Livro das Virtudes para Crianças)}
-%	\end{flushright}
-%\end{epigrafe}
+\begin{epigrafe}
+    \vspace*{\fill}
+	\begin{flushright}
+    \textit{\textbf{Tente Mais uma Vez}\\
+    ``Eis aqui o bom conselho a se seguir:\\
+		Tente mais uma vez;\\
+    Se no início algo é difícil conseguir;\\
+    Tente mais uma vez,\\
+    E verá sua coragem aparecer.\\
+    Nunca trema, não há nada que temer,\\
+    Persevere e verá que vai vencer;\\
+    Tente mais uma vez.''\\
+		(O Livro das Virtudes para Crianças, William J. Bennet)}
+	\end{flushright}
+\end{epigrafe}
 % ---
 
 % ---
@@ -432,8 +438,10 @@ Agradeço ao meu Orientador Marlus Koehler pela liberdade e pela confiança no m
 % inserir lista de abreviaturas e siglas
 % ---
 \begin{siglas}
+  \item[ANBIMA] Associação Brasileira das Entidades dos Mercados Financeiros
+  \item[CEASA]  Central de abastecimento
+  \item[InCA] \textit{Inhomogenous Cellular Automata}
   \item[UFPR] Universidade Federal do Paraná
-  \item[ICA ou INCA] Inhomogenous Cellular Automata
 \end{siglas}
 % ---
 
@@ -573,7 +581,7 @@ Em seguida, esse modelo de autômatos celular foi implementado na linguagem C. P
 \begin{figure}
     \centering
     \includegraphics[width=5cm]{matrizL100Ciclo0.png}
-    \caption{Representação gráfica da matriz de estados iniciais de uma simulação com $L=100$. Células pretas representam o estado $+1$ e células brancas representam o estado $-1$. A matriz de estados iniciais é gerada de forma aleatória, com semente baseada no horário de execução da simulação.}
+    \caption{Representação gráfica da matriz de estados iniciais de uma simulação com $L=100$. Células pretas representam o estado $+1$ e células brancas representam o estado $-1$. A matriz de estados iniciais é gerada de forma aleatória, com semente baseada no horário de execução da simulação. Fonte: produção própria.}
     \label{fig:matrizL100Ciclo0}
 \end{figure}
 
@@ -586,7 +594,7 @@ O grande diferencial desta implementação do InCA, em relação ao estudo de St
 \begin{figure}
     \centering
     \includegraphics[width=5cm]{contamination.png}
-    \caption{Algoritmo de contagem de aglomerados por contaminação de células ortogonalmente vizinhas e com o mesmo estado. Cada aglomerado é contaminado a partir de uma primeira célula até que não existam mais células a serem contaminadas. Na figura, a primeira célula é a central (em vermelho). Em seguida, as quatro células adjacentes a essa célula são contaminadas. No passo seguinte as oito células adjacentes a essas quatro células são contaminadas. O processo é repetido até que não existam mais células a serem contaminadas.}
+    \caption{Algoritmo de contagem de aglomerados por contaminação de células ortogonalmente vizinhas e com o mesmo estado. Cada aglomerado é contaminado a partir de uma primeira célula até que não existam mais células a serem contaminadas. Na figura, a célula que inicia a contaminação é a central (em vermelho). Em seguida, as quatro células adjacentes a essa célula são contaminadas. No passo seguinte as oito células adjacentes a essas quatro células são contaminadas. O processo é repetido até que não existam mais células a serem contaminadas. Fonte: produção própria.}
     \label{fig:contamination}
 \end{figure}
 
@@ -610,13 +618,9 @@ Este algoritmo tem complexidade $O(N)$ (notação \textit{Big O}), onde $N$ é o
 
 As análises foram feitas com base nos dados de estado médio, limiar médio, e número de aglomerados em função do ciclo da simulação. Nesses gráficos foram buscados padrões recorrentes, como retas, parábolas ou elipses.
 
-\subsection{A correlação entre estado médio e número de aglomerados}
-
-O estudo da correlação entre estado médio e número de aglomerados foi motivado pela percepção de que os gráficos de número de aglomerados \textit{versus} estado médio sempre apresentavam inclinações com o mesmo sinal. Apesar de curto, este serviu de gatilho para o estudo de afinidades.
-
 \subsection{Afinidade}
 
-Como mencionado acima, foi percebido que o número de aglomerados estava relacionado ao estado médio da matriz. De fato, essa relação se mostrou aproximadamente linear para todos os conjuntos de dados obtidos, como ilustrado na Figura \ref{fig:exemploAfinidade}. 
+Após a implementação do algoritmo de contagem de aglomerados foi percebido que o número de aglomerados estava relacionado ao estado médio da matriz. De fato, essa relação se mostrou aproximadamente linear para todos os conjuntos de dados obtidos, como ilustrado na Figura \ref{fig:exemploAfinidade}. 
 \begin{figure}[h]
     \centering
     \includegraphics[width=.75\linewidth]{ICA-L50-q5_0-seed556358439-ClusterVsAvgState.png}
@@ -731,7 +735,7 @@ Considerando que computadores geram números aleatórios a partir de uma \textit
     {
       \includegraphics[width=0.45\textwidth]{seed156501936thres.png}
     }
-    \caption{Matrizes iniciais geradas com a \textit{seed} 156501936. Essas matrizes foram utilizadas em todas as simulações de estudo de caos com vizinhança de Moore.}
+    \caption{Matrizes iniciais geradas com a \textit{seed} 156501936. Essas matrizes foram utilizadas em todas as simulações de estudo de caos com vizinhança de Moore. Fonte: produção própria.}
     \label{fig:matrizInicialCaosMoore}
   \end{figure}
 
@@ -744,7 +748,7 @@ Considerando que computadores geram números aleatórios a partir de uma \textit
     {
       \includegraphics[width=0.45\textwidth]{seed263598624thres.png}
     }
-    \caption{Matrizes iniciais geradas com a \textit{seed} 263598624. Essas matrizes foram utilizadas em todas as simulações de estudo de caos com vizinhança de VonNeumann.}
+    \caption{Matrizes iniciais geradas com a \textit{seed} 263598624. Essas matrizes foram utilizadas em todas as simulações de estudo de caos com vizinhança de VonNeumann. Fonte: produção própria.}
     \label{fig:matrizInicialCaosVonNeumann}
   \end{figure}
 	
@@ -769,7 +773,7 @@ Considerando que computadores geram números aleatórios a partir de uma \textit
 
 \section{A interpretação por Volatilidade}
 
-Diferentemente de \citeonline{stauffer}, que utilizou o \textit{Inhomogenous Cellular Automata} visando relações com o mercado financeiro, nós fizemos uma interpretação baseada na definição de \citeonline{anbima3}:
+Diferentemente de \citeonline{stauffer}, que utilizou o \textit{Inhomogenous Cellular Automata} visando relações com o mercado financeiro, nós fizemos uma interpretação baseada na definição de volatilidade:
 \begin{citacao}
   Em finanças, chamamos de \index{volatilidade}\textbf{volatilidade} o grau de variação dos preços de um ativo em
 um determinado período de tempo, medido pelo conceito estatístico de desvio-padrão dos
@@ -797,7 +801,7 @@ Portanto, assumindo que o preço está diretamente relacionado ao valor do produ
   \subfloat[9.5 comprimentos de onda são observados para volatilidade=0.6.]{\includegraphics[width=0.67\textwidth]{ICA-L500-q0_600-seed214482678-AvgStateAvgThresVsCycle.png}}
   
   \subfloat[A volatilidade 1 apresenta mais de 12 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{ICA-L500-q1_0-seed561875194-AvgStateAvgThresVsCycle.png}}
-  \caption{Gráficos dos valores médios (\textit{Average value}) do estado médio (\textit{Average State}) e do Limiar Médio (\textit{Average Threshold}) em função do ciclo de simulação. Interpretando o limiar médio como o valor médio de um produto e o estado médio como comprando (positivo) ou vendendo (negativo), percebe-se que quanto maior a volatilidade (q), mais comprimentos de onda são observados no mesmo intervalo de ciclos para o valor médio. É notável como o valor (limiar) continua alto mesmo após as células começarem a vender (estado médio caindo).}
+  \caption{Gráficos dos valores médios do estado médio e do Limiar Médio em função do ciclo de simulação. Interpretando o limiar médio como o valor médio de um produto e o estado médio como comprando (positivo) ou vendendo (negativo), percebe-se que quanto maior a volatilidade (q), mais comprimentos de onda são observados no mesmo intervalo de ciclos para o valor médio. É notável como o valor (limiar) continua alto mesmo após as células começarem a vender (estado médio caindo). Fonte: produção própria.}
   \label{fig:volatilidadeMoore}
 \end{figure}
 
@@ -808,7 +812,7 @@ Portanto, assumindo que o preço está diretamente relacionado ao valor do produ
   \subfloat[Volatilidade 0.6 e aproximadamente 19 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png}}
   
   \subfloat[Volatilidade 1 e aproximadamente 28 comprimentos de onda.]{\includegraphics[width=0.67\textwidth]{VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png}}
-  \caption{Gráficos dos valores médios do estado médio (\textit{Average State}) e do Limiar Médio (\textit{Average Threshold}) em função do ciclo (\textit{Cycle}) de uma simulação com vizinhança de VonNeumann. Novamente percebe-se que, quanto maior a volatilidade (q), mais comprimentos de onda são observados no mesmo intervalo de ciclos para o valor (limiar) médio. Essas oscilações são em maior número do que as observadas para a vizinhança de Moore. Igualmente nota-se que o valor (limiar) continua alto mesmo após as células (agentes) começarem a vender. }
+  \caption{Gráficos dos valores médios do estado médio e do Limiar Médio em função do ciclo de uma simulação com vizinhança de VonNeumann. Novamente percebe-se que, quanto maior a volatilidade (q), mais comprimentos de onda são observados no mesmo intervalo de ciclos para o valor (limiar) médio. Essas oscilações são em maior número do que as observadas para a vizinhança de Moore. Igualmente nota-se que o valor (limiar) continua alto mesmo após as células (agentes) começarem a vender. Fonte: produção própria.}
   \label{fig:volatilidadeVonNeumann}
 \end{figure}
 
@@ -824,7 +828,7 @@ Uma análise da afinidade para várias larguras de matrizes e vários valores de
     \subfloat[Afinidades das simulações com vizinhança de VonNeumann. Percebe-se um ponto crítico próximo de $q=2$.]{\includegraphics[width=0.67\textwidth]{afinidadeVonNeumann.png}}
 
     \subfloat[Afinidades das simulações com vizinhança de Moore. Percebe-se um ponto crítico próximo de $q=5$.]{\includegraphics[width=0.67\textwidth]{afinidadeMoore.png}}
-    \caption{Gráficos das afinidades para vizinhanças de VonNeumann e de Moore. Em ambos os casos percebe-se que o crescimento do afinidade no ponto crítico é menor para larguras menores de matrizes, como pode ser observado entre os pontos para $L=50$ (\texttt{+}) e $L=500$ ($\square$).}
+    \caption{Gráficos das afinidades para vizinhanças de VonNeumann e de Moore. Em ambos os casos percebe-se que o crescimento do afinidade no ponto crítico é menor para larguras menores de matrizes, como pode ser observado entre os pontos para $L=50$ ($\times$) e $L=500$ ($\blacksquare$). Fonte: produção própria.}
     \label{fig:afinidades}
 \end{figure}
 
@@ -835,7 +839,7 @@ Devido ao crescimento diferente entre as afinidades para larguras diferentes de 
   \subfloat[Derivadas das afinidades em função de $q$ para as simulações com vizinhança de VonNeumann. Novamente percebe-se o ponto crítico próximo a $q=2$. A derivada cresce e cai rapidamente em volta do máximo.]{\includegraphics[width=0.67\textwidth]{afinidadeDeriVonNeumann.png}}
 
   \subfloat[Derivadas das afinidades em função de $q$ para as simulações com vizinhança de Moore. O ponto crítico próximo de $q=5$ permanece. Para esta vizinhança é observado um crescimento lento da derivada até o máximo e uma queda brusca após o máximo.]{\includegraphics[width=0.67\textwidth]{afinidadeDeriMoore.png}}
-  \caption{Gráficos das derivadas das Afinidades em função do ajuste máximo de limiar $q$ para várias larguras de matriz diferentes. Nestes gráficos fica mais perceptível a diferença de inclinação no ponto crítico para os diferentes tamanhos de matriz.}
+  \caption{Gráficos das derivadas das Afinidades em função do ajuste máximo de limiar $q$ para várias larguras de matriz diferentes. Nestes gráficos fica mais perceptível a diferença de inclinação no ponto crítico para os diferentes tamanhos de matriz. Fonte: produção própria.}
   \label{fig:DerivadasAfinidades}
 \end{figure}
 
@@ -877,7 +881,11 @@ Se considerarmos o ajuste de limiar $q$ como sendo a liquidez, as células da ma
 
 Também foi conjecturada uma aplicação ao mundo real com base no que foi discutido acima: ao passo em que um mercado cresce e a liquidez do produto comercializado aumenta, a quantidade de agentes negociando o produto também aumentará, aumentando a necessidade de centros de negociação cada vez maiores a fim de comportar tantos agentes. A nossa pesquisa sobre afinidade revelou que, apesar de esse crescimento ser suave para a maioria dos valores de liquidez, existirá um momento em que os agentes se unirão em um único e grande centro de negociações. 
 
-De acordo com o histórico institucional do CEASA-PR disponível no site \url{http://www.ceasa.pr.gov.br/modules/conteudo/conteudo.php?conteudo=1} (acesso em 31 de maio de 2019): ``Com o crescimento dos centros urbanos do país, o processo de distribuição de produtos hortigranjeiros tornou-se mais complexo e oneroso, o que aliado à precariedade dos mercados tradicionais, suscitou a necessidade de aperfeiçoamento das estruturas de comercialização desses produtos.'' Isso está alinhado com os estudos realizados, sendo que no caso do CEASA-PR, o fator decisivo para a aglomeração ou ponto crítico foram os altos custos da alternativa. 
+De acordo com o histórico institucional do CEASA-PR, disponível no site \url{http://www.ceasa.pr.gov.br/modules/conteudo/conteudo.php?conteudo=1} (acesso em 31 de maio de 2019), um dos fatores de sua criação foi o alto custo de distribuição dos alimentos: 
+\begin{citacao}
+  Com o crescimento dos centros urbanos do país, o processo de distribuição de produtos hortigranjeiros tornou-se mais complexo e oneroso, o que aliado à precariedade dos mercados tradicionais, suscitou a necessidade de aperfeiçoamento das estruturas de comercialização desses produtos.
+\end{citacao}
+Portanto, o aumento da liquidez do mercado de alimentos fez com que houvesse uma ``pressão'' para que surgisse esse centro de distribuição, de modo que os pequenos centros se uniram ou se sincronizaram. Isso está alinhado com os estudos realizados e com a interpretação de liquidez, bem como a aplicabilidade do modelo em fenômenos reais.
 
 \section{Caos}
 
@@ -935,7 +943,7 @@ A verificação de caos foi feita como estudo adicional e foi feita utilizando a
   \subfloat[Espectro do caos para uma simulação que teve 10 entre 10000 células modificadas (0.1\%). É possível perceber, pelos pontos com $\Delta^\frac{1}{10}$ próximo de 0 nos ciclos entre 0 e 1000, que o sistema se comportou parcialmente regular durante os primeiros ciclos, ficando totalmente caótico a partir do ciclo 1000.]{\hspace{2cm}\includegraphics[width=0.6\textwidth]{caosq01noise10.png}\hspace{2cm}}
   
   \subfloat[Espectro do caos para uma simulação que teve 1\% das células modificadas. Este caso demonstrou um comportamento diferente dos anteriores, apresentando caos desde o começo e entrando em harmonia com os dados de base em alguns momentos, como é visualizável entre os ciclos 5000 e 6000.]{\hspace{2cm}\includegraphics[width=0.6\textwidth]{caosq01noise100.png}\hspace{2cm}}
-  \caption{Exemplos de comportamentos caóticos obtidos para simulações com vizinhança de Moore, $L=100$ e $q=0.1$.}
+  \caption{Exemplos de comportamentos caóticos obtidos para simulações com vizinhança de Moore, $L=100$ e $q=0.1$. Fonte: produção própria.}
   \label{fig:caos}
 \end{figure}
 
@@ -948,7 +956,7 @@ Durante a pesquisa foram encontrados vários gráficos com comportamentos intere
   \subfloat[Padrão quase toroidal observado ao comparar o número de aglomerados em função do limiar médio em uma simulação com vizinhança de Moore. Na imagem estão representados os 10000 pontos da simulação realizada.]{\includegraphics[width=0.67\textwidth]{ICA-L100-q4_599-seed593122627-ClusterVsAvgThres.png}}
 
   \subfloat[Padrão toroidal com um núcleo formado por 10000 pontos de uma simulação com vizinhança de Moore.]{\includegraphics[width=0.67\textwidth]{ICA-L250-q5_0-seed134642580-ClusterVsAvgThres.png}}
-  \caption{Gráficos do Número de Aglomerados (\textit{Number of Clusters}) em função do Limiar Médio (\textit{Average Threshold}). Esses padrões foram muito comuns nos resultados das simulações realizadas, tanto para vizinhanças de Moore como para de VonNeumann, acontecendo todos na relação entre Número de Aglomerados e Limiar Médio.}
+  \caption{Gráficos do Número de Aglomerados em função do Limiar Médio. Esses padrões foram muito comuns nos resultados das simulações realizadas, tanto para vizinhanças de Moore como para de VonNeumann, acontecendo todos na relação entre Número de Aglomerados e Limiar Médio. Fonte: produção própria.}
   \label{fig:clusterthres}
 \end{figure}
 
@@ -965,7 +973,7 @@ Durante a pesquisa foram encontrados vários gráficos com comportamentos intere
 \chapter{Conclusão}
 % ---
 
-Com os trabalhos desenvolvidos neste semestre foi possível desenvolver habilidades de análise e reprodução de autômatos celulares (em especial o \textit{Inhomogenous Cellular Automata} de Stauffer). A grande surpresa aconteceram neste estudo: a primeira foi os recorrentes padrões lineares no caso dos gráficos do número de aglomerados em função do estado médio; a segunda aconteceu na observação do poder que a modificação de $0.01\%$ da matriz inicial de uma simulação consegue causar a longo prazo, não deixando dúvidas de que o sistema estudado é caótico. A aplicação em dois conceitos da economia, a volatilidade e a liquidez, também serviram quase que perfeitamente como exemplos da aplicação do sistema desenvolvido, sendo possível encontrar exemplos como o CEASA, cuja necessidade de criação corrobora com o ponto crítico nos gráficos da Afinidade em função da Liquidez. Não menos importante se mostrou a fertilidade do \textit{Inhomogenous Cellular Automata} desenvolvido inicialmente por \citeonline{stauffer}, que pode ser modificado de inúmeras formas, gerando resultados diferentes e interessantes, como foi o caso de nosso desenvolvimento utilizando vizinhança de Moore. Exemplos disso foram os padrões que se assemelham a toróides ou planetas com anéis encontrados nas simulações ao se comparar o número de aglomerados com o limiar médio. Além dos resultados obtidos neste trabalho, tão importante foram os aprendizados desenvolvidos na realização dele, tanto em desenvolvimento de projetos, como em programação, e interpretação de dados. O leitor que se sentir interessado em explorar o programa de simulações de autômatos celulares desenvolvido pode obtê-lo acessando \url{https://github.com/Ly54ndr0/CellularAutomataExplorer} (ainda em desenvolvimento).
+Com os trabalhos desenvolvidos neste semestre foi possível desenvolver habilidades de análise e reprodução de autômatos celulares (em especial o \textit{Inhomogenous Cellular Automata} de Stauffer). A grande surpresa aconteceram neste estudo: a primeira foi os recorrentes padrões lineares no caso dos gráficos do número de aglomerados em função do estado médio; a segunda aconteceu na observação do poder que a modificação de $0.01\%$ da matriz inicial de uma simulação consegue causar a longo prazo, não deixando dúvidas de que o sistema estudado é caótico. A aplicação em dois conceitos da economia, a volatilidade e a liquidez, também serviram quase que perfeitamente como exemplos da aplicação do sistema desenvolvido, sendo possível encontrar exemplos como o CEASA, cuja necessidade de criação corrobora com o ponto crítico nos gráficos da Afinidade em função da Liquidez. Não menos importante se mostrou a fertilidade do \textit{Inhomogenous Cellular Automata} desenvolvido inicialmente por \citeonline{stauffer}, que pode ser modificado de inúmeras formas, gerando resultados diferentes e interessantes, como foi o caso de nosso desenvolvimento utilizando vizinhança de Moore. Exemplos disso foram os padrões que se assemelham a toróides ou planetas com anéis encontrados nas simulações ao se comparar o número de aglomerados com o limiar médio. Além dos resultados obtidos neste trabalho, tão importante foram os aprendizados desenvolvidos na realização dele, tanto em desenvolvimento de projetos, como em programação, e interpretação de dados. O leitor que se sentir interessado em explorar o programa de simulações de autômatos celulares desenvolvido pode obtê-lo e fazer contribuições acessando \url{https://github.com/Ly54ndr0/CellularAutomataExplorer} (ainda em desenvolvimento).
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS

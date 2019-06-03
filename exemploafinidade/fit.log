@@ -1,0 +1,216 @@
+
+
+*******************************************************************************
+Mon Jun  3 03:47:06 2019
+
+
+FIT:    data read from "ICA-L50-q5_000-seed556358439.dat" using 2:4
+        format = x:z
+        #datapoints = 20001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3113829826e+08   0.00e+00  7.14e-01    1.000000e+00   1.000000e+00
+   3 1.4961632057e+06  -2.18e-10  7.14e-04   -1.802991e+02   7.724756e+01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.49616e+06
+rel. change during last iteration : -2.17866e-15
+
+degrees of freedom    (FIT_NDF)                        : 19999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.64939
+variance of residuals (reduced chisquare) = WSSR/ndf   : 74.8119
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -180.299         +/- 0.4272       (0.237%)
+b               = 77.2476          +/- 0.06116      (0.07917%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.001  1.000 
+
+
+*******************************************************************************
+Mon Jun  3 03:47:26 2019
+
+
+FIT:    data read from "ICA-L50-q5_000-seed556358439.dat" using 2:4
+        format = x:z
+        #datapoints = 20001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3113829826e+08   0.00e+00  7.14e-01    1.000000e+00   1.000000e+00
+   3 1.4961632057e+06  -2.18e-10  7.14e-04   -1.802991e+02   7.724756e+01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.49616e+06
+rel. change during last iteration : -2.17866e-15
+
+degrees of freedom    (FIT_NDF)                        : 19999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.64939
+variance of residuals (reduced chisquare) = WSSR/ndf   : 74.8119
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -180.299         +/- 0.4272       (0.237%)
+b               = 77.2476          +/- 0.06116      (0.07917%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.001  1.000 
+
+
+*******************************************************************************
+Mon Jun  3 03:48:10 2019
+
+
+FIT:    data read from "ICA-L50-q5_000-seed556358439.dat" using 2:4
+        format = x:z
+        #datapoints = 20001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3113829826e+08   0.00e+00  7.14e-01    1.000000e+00   1.000000e+00
+   3 1.4961632057e+06  -2.18e-10  7.14e-04   -1.802991e+02   7.724756e+01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.49616e+06
+rel. change during last iteration : -2.17866e-15
+
+degrees of freedom    (FIT_NDF)                        : 19999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.64939
+variance of residuals (reduced chisquare) = WSSR/ndf   : 74.8119
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -180.299         +/- 0.4272       (0.237%)
+b               = 77.2476          +/- 0.06116      (0.07917%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.001  1.000 
+
+
+*******************************************************************************
+Mon Jun  3 03:48:47 2019
+
+
+FIT:    data read from "ICA-L50-q5_000-seed556358439.dat" using 2:4
+        format = x:z
+        #datapoints = 20001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3113829826e+08   0.00e+00  7.14e-01    1.000000e+00   1.000000e+00
+   3 1.4961632057e+06  -2.18e-10  7.14e-04   -1.802991e+02   7.724756e+01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.49616e+06
+rel. change during last iteration : -2.17866e-15
+
+degrees of freedom    (FIT_NDF)                        : 19999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.64939
+variance of residuals (reduced chisquare) = WSSR/ndf   : 74.8119
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -180.299         +/- 0.4272       (0.237%)
+b               = 77.2476          +/- 0.06116      (0.07917%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.001  1.000 
+
+
+*******************************************************************************
+Mon Jun  3 03:49:04 2019
+
+
+FIT:    data read from "ICA-L50-q5_000-seed556358439.dat" using 2:4
+        format = x:z
+        #datapoints = 20001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3113829826e+08   0.00e+00  7.14e-01    1.000000e+00   1.000000e+00
+   3 1.4961632057e+06  -2.18e-10  7.14e-04   -1.802991e+02   7.724756e+01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.49616e+06
+rel. change during last iteration : -2.17866e-15
+
+degrees of freedom    (FIT_NDF)                        : 19999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.64939
+variance of residuals (reduced chisquare) = WSSR/ndf   : 74.8119
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -180.299         +/- 0.4272       (0.237%)
+b               = 77.2476          +/- 0.06116      (0.07917%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.001  1.000 
+
+
+*******************************************************************************
+Mon Jun  3 03:49:37 2019
+
+
+FIT:    data read from "ICA-L50-q5_000-seed556358439.dat" using 2:4
+        format = x:z
+        #datapoints = 20001
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.3113829826e+08   0.00e+00  7.14e-01    1.000000e+00   1.000000e+00
+   3 1.4961632057e+06  -2.18e-10  7.14e-04   -1.802991e+02   7.724756e+01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1.49616e+06
+rel. change during last iteration : -2.17866e-15
+
+degrees of freedom    (FIT_NDF)                        : 19999
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.64939
+variance of residuals (reduced chisquare) = WSSR/ndf   : 74.8119
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -180.299         +/- 0.4272       (0.237%)
+b               = 77.2476          +/- 0.06116      (0.07917%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.001  1.000 

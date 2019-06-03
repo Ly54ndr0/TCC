@@ -8,25 +8,24 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{19}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{21}{chapter.1}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{23}{chapter.2}
-\contentsline {section}{\numberline {2.1}Estudos iniciais}{23}{section.2.1}
-\contentsline {section}{\numberline {2.2}Modelagem e implementa\IeC {\c c}\IeC {\~a}o de aut\IeC {\^o}matos}{23}{section.2.2}
-\contentsline {section}{\numberline {2.3}O algoritmo de contagem de aglomerados}{25}{section.2.3}
-\contentsline {section}{\numberline {2.4}Metodologias de an\IeC {\'a}lise}{26}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}A correla\IeC {\c c}\IeC {\~a}o entre estado m\IeC {\'e}dio e n\IeC {\'u}mero de aglomerados}{27}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Afinidade}{27}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Caos}{29}{subsection.2.4.3}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Metodologia}}{25}{chapter.2}
+\contentsline {section}{\numberline {2.1}Estudos iniciais}{25}{section.2.1}
+\contentsline {section}{\numberline {2.2}Modelagem e implementa\IeC {\c c}\IeC {\~a}o de aut\IeC {\^o}matos}{25}{section.2.2}
+\contentsline {section}{\numberline {2.3}O algoritmo de contagem de aglomerados}{27}{section.2.3}
+\contentsline {section}{\numberline {2.4}Metodologias de an\IeC {\'a}lise}{28}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Afinidade}{29}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Caos}{31}{subsection.2.4.2}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Resultados e An\IeC {\'a}lises}}{31}{chapter.3}
-\contentsline {section}{\numberline {3.1}A interpreta\IeC {\c c}\IeC {\~a}o por Volatilidade}{31}{section.3.1}
-\contentsline {section}{\numberline {3.2}A an\IeC {\'a}lise da Afinidade}{34}{section.3.2}
-\contentsline {section}{\numberline {3.3}Caos}{37}{section.3.3}
-\contentsline {section}{\numberline {3.4}Fen\IeC {\^o}menos n\IeC {\~a}o estudados}{38}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Resultados e An\IeC {\'a}lises}}{33}{chapter.3}
+\contentsline {section}{\numberline {3.1}A interpreta\IeC {\c c}\IeC {\~a}o por Volatilidade}{33}{section.3.1}
+\contentsline {section}{\numberline {3.2}A an\IeC {\'a}lise da Afinidade}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}Caos}{39}{section.3.3}
+\contentsline {section}{\numberline {3.4}Fen\IeC {\^o}menos n\IeC {\~a}o estudados}{42}{section.3.4}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o}}{41}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Conclus\IeC {\~a}o}}{43}{chapter.4}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{43}{section*.34}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{45}{section*.35}

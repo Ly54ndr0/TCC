@@ -10,23 +10,23 @@ unset title
 set ylabel "Afinidade"
 set xlabel"q"
 set output "afinidadeMoore.png"
-plot for [col=2:5] 'moore.dat' using 1:col
+plot for [col=2:5] 'moore.dat' using 1:col ls 1 pt col ps 0.9
 
 unset title
 set ylabel "Afinidade"
 set xlabel"q"
 set output "afinidadeVonNeumann.png"
-plot for [col=2:5] 'vonNeumann.dat' using 1:col
+plot for [col=2:5] 'vonNeumann.dat' using 1:col ls 1 pt col ps 0.9
 
 unset title
 set ylabel "d Afinidade / dq"
 set xlabel"q"
 set output "afinidadeDeriMoore.png"
-plot for [col=2:5] 'deriMoore.dat' using 1:col with lines
+plot for [col=2:4] 'deriMoore.dat' using 1:col with lines ls 1 dt col*2-2 lw 2, 'deriMoore.dat' using 1:5 with lines ls 1 dt "_ . _" lw 2
 
 unset title
 set ylabel "d Afinidade / dq"
 set xlabel"q"
 set output "afinidadeDeriVonNeumann.png"
-plot for [col=2:5] 'deriVonNeumann.dat' using 1:col with lines
+plot for [col=2:4] 'deriVonNeumann.dat' using 1:col with lines ls 1 dt col*2-2 lw 2, 'deriVonNeumann.dat' using 1:5 with lines ls 1 dt "_ . _" lw 2
 

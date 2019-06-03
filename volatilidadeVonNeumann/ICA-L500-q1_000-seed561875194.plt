@@ -6,20 +6,20 @@ set term pngcairo enhanced font "Times New Roman-Bold, 12" size (16*38),(9*38)
 set termoption dashed
 set style line 1 lc rgb '#000000' lt 1 lw 1 pt 1 pi -1 ps 1.5
 
-set title "L=500  q=0.2  seed=479735081"
-set ylabel "Average value"
-set xlabel"Cycle"
+set title "L=500  q=0.2  seed=479735081  vizinhança=VonNeumann"
+set ylabel "Valor Médio"
+set xlabel"Ciclo"
 set output "VonICA-L500-q0_200-seed479735081-AvgStateAvgThresVsCycle.png"
-plot [1000:1500] "ICA-L500-q0_200-seed479735081.dat" using 1:2 with lines ls 1, "ICA-L500-q0_200-seed479735081.dat" using 1:3 with lines ls 1 lt 3
+plot [1000:1500] "ICA-L500-q0_200-seed479735081.dat" using 1:2 with lines ls 1, "ICA-L500-q0_200-seed479735081.dat" using 1:3 with lines ls 1 dt 2
 
-set title "L=500  q=0.6  seed=328662057"
-set ylabel "Average value"
-set xlabel"Cycle"
+set title "L=500  q=0.6  seed=328662057  vizinhança=VonNeumann"
+set ylabel "Valor Médio"
+set xlabel"Ciclo"
 set output "VonICA-L500-q0_600-seed328662057-AvgStateAvgThresVsCycle.png"
-plot [1000:1500] "ICA-L500-q0_600-seed328662057.dat" using 1:2 with lines ls 1, "ICA-L500-q0_600-seed328662057.dat" using 1:3 with lines ls 1 lt 3
+plot [1000:1500] "ICA-L500-q0_600-seed328662057.dat" using 1:2 with lines ls 1, "ICA-L500-q0_600-seed328662057.dat" using 1:3 with lines ls 1 dt 2
 
-set title "L=500  q=1  seed=145500508"
-set ylabel "Average value"
-set xlabel"Cycle"
+set title "L=500  q=1  seed=145500508  vizinhança=VonNeumann"
+set ylabel "Valor Médio"
+set xlabel"Ciclo"
 set output "VonICA-L500-q1_000-seed145500508-AvgStateAvgThresVsCycle.png"
-plot [1000:1500] "ICA-L500-q1_000-seed145500508.dat" using 1:2 with lines ls 1, "ICA-L500-q1_000-seed145500508.dat" using 1:3 with lines ls 1 lt 3
+plot [1000:1500] "ICA-L500-q1_000-seed145500508.dat" using 1:2 with lines ls 1, "ICA-L500-q1_000-seed145500508.dat" using 1:3 with lines ls 1 dt 2
